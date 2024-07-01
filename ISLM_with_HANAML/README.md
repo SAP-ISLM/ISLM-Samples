@@ -94,5 +94,109 @@ Once the Intelligent Scenario is published, the Intelligent Scenario Management 
 
 In this section, you will use the Intelligent Scenario Management app to perform ML operations. 
 
-1. Open the Fiori Launchpad. Check the URL, Input the username and password provided in the cheat sheet. Click on My Home section and choose the Intelligent Scenario Management app.
-![](./images/13.png)
+1. Open the Fiori Launchpad. Check the URL, Input the username and password provided in the cheat sheet. Click on **My Home** section and choose the Intelligent Scenario Management app.
+![](./images/14.png)
+2. Search the **First-Class Seats Occupied** scenario created by you and navigate to the details page by clicking the `>` icon. <br>![](./images/15.png)
+3. Select the Model and click on the **Train button** to trigger the training.
+   <br>![](./images/16.png)
+4. In the Model section, view the Dataset Record Count. Click on **Train** button.
+   <br>![](./images/17.png)
+5. New Model Version will be created in **Scheduled** status.
+   <br>![](./images/18.png)
+6. Monitor the status of the **Model Version** and check the status changes to **Training**.
+   <br>![](./images/19.png)
+7. Monitor the status of the Model Version and check the status changes to **Ready**.
+   <br>![](./images/20.png)
+8. Click on **'>'** icon to view Model Version Report.
+   <br>![](./images/21.png)
+9. View different tabs like **Quality Information and Debrief**. You can see attributes about data quality and what key influencers 
+   are affecting the predictions.
+   <br>![](./images/22.png)
+   **Mean Absolute Error(MAE):** Average absolute difference between the predicted values and the actual values. The lower 
+     the better.
+   
+   **Root Mean Square Error(RMSE):** RMSE is the square root of mean squared error. It measures the average difference 
+    between values predicted by a model and the actual values. RMSE tells us how close the actual values are to 
+    prediction values made by the model. The lower the better.
+   
+   **Mean Absolute Percentage Error(MAPE)** Average of the absolute percentage errors of the predictions. The lower the 
+    better.
+    <br>Choose the back icon <img src="../images/SAPBack_White.png" width="70"> to navigate back to Model Versions screen.
+10. Activate the model version to return predictions. Select the Model Version and click the **Activate** button.
+    <br>![](./images/23.png)
+
+### Well done, you just Operated the Intelligent Scenario by training your first model.
+<br>
+
+## 3. Visualizing Model Version Predictions
+
+In this step, you will use the ABAP GUI tool to view the model's predictions. Open SAP Logon and logon to system using the username and password provided in the cheat sheet.
+
+1. Open transaction **/nSE38**
+   <br>![](./images/24.png)
+
+2. Search for report **RUT_DDLS_DATA_PREVIEW** and click on Execute 
+   <br>![](./images/25.png)
+
+3. Enter the ISLM generated CDS view of created Intelligent Scenario to view predictions from trained model. This CDS View was copied in the first step during creation of the Intelligent Scenario. 
+   **CDS View will have following name <INTELLIGENT_SCENARIO_NAME>_CDS01.** 
+   Enter CDS View Name in Entity Name field and click on **Execute**.
+   <br>![](./images/26.png)
+
+4. You can scroll down and see the model's keys in the first four columns: **Airline Code, Flight Connection Number, Flight Date and Booking number.** <br>
+Column **SEATSOCCF** has the actual value of the seats occupied.<br>
+Column **GB_SCORE_SEATSOCCF** column has the predicted value of the occupied seats.
+<br>![](./images/27.png)
+
+ ### Well done, you just visualized your trained model predictions..!
+
+# Schedule training 
+You can schedule a training for your intelligent scenarios. Once the trainings are scheduled, model versions are created automatically based on the selected frequency and preselected filters.
+
+1. Open the Fiori Launchpad. Check the URL, Input the username and password provided in the cheat sheet. 
+
+    Click on **My Home** section and choose the **Intelligent Scenario Management** app.
+    ![](./images/Scheduling/1.png)
+2. Search the **First-Class Seats Occupied** scenario created by you and navigate to the details page by clicking the **>** 
+   icon.
+   <br>![](./images/Scheduling/2.png)
+3. Click on **Create Schedule**.
+   <br>![](./images/Scheduling/3.png)
+4. View the information displayed in the screen. Click on **Model Version** value help.
+   <br>![](./images/Scheduling/4.png)
+5. Select the reference Model Version.
+   <br>![](./images/Scheduling/5.png)
+6. Click on **Go to Step 2**.
+   <br>![](./images/Scheduling/6.png)
+7. Review Scheduling Options automatically proposed by the system. <br>
+   Enter the Start as **2 minutes later** than the system proposed time. <br>
+   Schedule for **1 Occurrence(s)** and click on **Go to Step 3**.
+   <br>![](./images/Scheduling/7.png)
+8. Review the section Intelligent Scenarios Details and Schedule Details.<br>
+   Click on **Create Schedule** 
+   <br>![](./images/Scheduling/8.png)
+9. Click on **Schedule Planned Task** tab to view the planned task created as a result of scheduling of training.
+    <br>![](./images/Scheduling/9.png)
+10. Click on **>** icon.
+    <br>![](./images/Scheduling/10.png)
+11. Review **scheduling Options** and **Scheduling Runs** tab.
+    <br>![](./images/Scheduling/11.png)
+12. Click the highlighted icon to view the created Model Version. This step will take time as logs are opened in another App.
+    <br>![](./images/Scheduling/12.png)
+13. View the created **Model Version ID**.
+    <br>![](./images/Scheduling/13.png)
+14. Choose the back icon <img src="../images/SAPBack_White.png" width="70"> to navigate back Scheduled Planned Task screen. <br>
+    Choose the back icon <img src="../images/SAPBack_White.png" width="70"> to navigate back to Model screen. <br>
+
+    Click on **>** icon to view the created Model Version.
+    <br>![](./images/Scheduling/14.png)
+15. View the created Model Version as outcome of Scheduling of Training.
+    <br>![](./images/Scheduling/15.png)
+
+
+### Well done, you just scheduled training.
+<br>
+
+## Summary
+🎉 Congratulations! 🎉 <br>
+You have successfully completed the Schedule Training. <br>
