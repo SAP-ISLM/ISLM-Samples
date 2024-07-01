@@ -28,7 +28,7 @@ An application developer for SAP S/4HANA from SAP or customer/partner side, is m
 
 By the end of this workshop, participants will gain a comprehensive understanding of how ISLM empowers organizations to smoothly transition from data science experimentation to real-world AI application development, all within the SAP S/4HANA environment. 
 
-![](./images/overview.png)
+![](./images/Overview.png)
 
 **Business User:** The end user who interacts with the business application and uses the predictions from machine learning for the business purpose. <br>
 
