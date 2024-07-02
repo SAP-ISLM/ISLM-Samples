@@ -42,32 +42,33 @@ Gradient Boosting regression model type provides a more accurate modeling result
 ![](./images/3.png)
 
 4. Provide the required information in the screen: 
-    1) Intelligent Scenario Name: Enter a unique name starting with Z, such as Z_SEATOCC_FTCLAS_### ### is your attendee id. 
-    2) Intelligent Scenario Description: Enter a description for the Intelligent Scenario. Intelligent Scenario Type, Algorithm and Machine Learning Library is automatically populated.
+    1) **Intelligent Scenario Name:** Enter a unique name starting with Z, such as `Z_SEATOCC_FTCLAS_###` ### is your attendee id. 
+    2) **Intelligent Scenario Description:** Enter a description for the Intelligent Scenario. Intelligent Scenario Type, Algorithm and Machine Learning Library is automatically populated.
 
 ![](./images/4.png)
     
-5. Click on the Add Model button.
+5. Click on the **Add Model** button.
 
 ![](./images/5.png)
 
 6. The APL Regression Model screen will pop up. Provide information as mentioned below: 
-    1) Name: Enter a model name starting with Z. 
-    2) Description: Enter a description.
+    1) **Name:** Enter a model name starting with Z. 
+    2) **Description:** Enter a description.
     
     ![](./images/6.png)
 
-    3) Enter a CDS view to be used as Training Dataset: `ZISLM_SFLIGHT_TRAIN_CDS`. Training Dataset to be used for training the model. 
-    4) Enter a CDS view to be used as Apply Dataset: `ZISLM_SFLIGHT_APPLY_CDS `(Note that apply dataset is different from training dataset). Apply dataset is Dataset used for prediction.
+    3) Enter a CDS view to be used as **Training Dataset**: `ZISLM_SFLIGHT_TRAIN_CDS`. <br>Training Dataset to be used for training the model. 
+    4) Enter a CDS view to be used as **Apply Dataset**: `ZISLM_SFLIGHT_APPLY_CDS` (Note that apply dataset is different from training dataset). <br>Apply dataset is Dataset used for prediction.
 
     ![](./images/7.png)
 
-    5) Select your target variable. Target: `SEATSOCCF`. Target variable is field whose value you want to predict. 
-    6) Max Reason Code: `1` Number of reason codes you want to generate. Reason codes are variables whose values have the most influence in a score-based decision (typically a risk score). The variables for which the contribution is the most differential are selected as the most important reason codes. Apply output configuration has the selected metrics that are added in the intelligent scenario output and used for prediction. 
+    5) Select your target variable. **Target**: `SEATSOCC_F`. <br>Target variable is field whose value you want to predict. 
+    6) **Max Reason Code:** `1` Number of reason codes you want to generate. Reason codes are variables whose values have the most influence in a score-based decision (typically a risk score). <br>The variables for which the contribution is the most differential are selected as the most important reason codes. <br>Apply output configuration has the selected metrics that are added in the intelligent scenario output and used for prediction. 
     7) Click on the **Add** button.
+    
     ![](./images/8.png)
 
-7. The scenario is now created in Draft Status. View the Input and Output fields to train the model in the **Input and 
+7. The scenario is now created in **Draft** Status. View the Input and Output fields to train the model in the **Input and 
    Outputs Tabs** respectively.<br>
 
    Input Tab displays the key, input, and target fields. 
@@ -79,7 +80,7 @@ Gradient Boosting regression model type provides a more accurate modeling result
 The Prediction variable includes the calculation result.
 ![](./images/9.png)
 
-8. Scenario is now ready to be published. Click on Publish button. You will receive a message that Intelligent Scenario is published.
+8. Scenario is now ready to be published. Click on **Publish** button. You will receive a message that Intelligent Scenario is published.
 ![](./images/10.png)
 9. Search the Intelligent Scenario created by you by entering the **Intelligent Scenario name and Status = Published**.
 ![](./images/11.png)
@@ -181,7 +182,7 @@ You can schedule a training for your intelligent scenarios. Once the trainings a
     <br>![](./images/Scheduling/10.png)
 11. Review **scheduling Options** and **Scheduling Runs** tab.
     <br>![](./images/Scheduling/11.png)
-12. Click the highlighted icon to view the created Model Version. This step will take time as logs are opened in another App.
+12. Click the highlighted icon to view the created Model Version. **This step will take time** as logs are opened in another App.
     <br>![](./images/Scheduling/12.png)
 13. View the created **Model Version ID**.
     <br>![](./images/Scheduling/13.png)
