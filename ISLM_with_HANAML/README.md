@@ -130,10 +130,14 @@ In this section, you will use the Intelligent Scenario Management app to perform
 <br>
 
 ## 3. Visualizing Model Version Predictions
+In this step, you will use the ABAP Development Tools to view the model's prediction.
+<br>You can start the ABAP Development Tools via the Windows Taskbar.
+![](./images/TaskBar.png)
 
-In this step, you will use the ABAP GUI tool to view the model's predictions. Open SAP Logon and logon to system using the username and password provided in the cheat sheet.
+1. Click on `Run ABAP Development Object as ABAP Application in SAP GUI` button, or alternatively press `Alt + F8`. If you're asked for credentials, please login the username and password provided in the cheat sheet.
+<br>![](./images/ADT_Toolbar.png)
 
-1. Open transaction **/nSE38**
+1. Type **se38** in the search dialog and clck **OK**.
    <br>![](./images/24.png)
 
 2. Search for report **RUT_DDLS_DATA_PREVIEW** and click on Execute 
