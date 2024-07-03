@@ -132,7 +132,7 @@ In this section, you will use the Intelligent Scenario Management app to perform
 ## 3. Visualizing Model Version Predictions
 In this step, you will use the ABAP Development Tools to view the model's prediction.
 <br>You can start the ABAP Development Tools via the Windows Taskbar.
-![](./images/TaskBar.png)
+<br>![](./images/TaskBar.png)
 
 1. Click on `Run ABAP Development Object as ABAP Application in SAP GUI` button, or alternatively press `Alt + F8`. If you're asked for credentials, please login the username and password provided in the cheat sheet.
 <br>![](./images/ADT_Toolbar.png)
