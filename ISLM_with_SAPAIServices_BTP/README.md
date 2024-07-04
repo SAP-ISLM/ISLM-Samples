@@ -58,9 +58,9 @@ The Intelligent Scenarios app is used to create intelligent scenarios, revie
    <br>![](./images/9.png)
 
 11. Provide the required information in the screen:
-	1. **Intelligent Scenario Name**: Enter a unique name starting with Z, such as `Z_SFI24_PLANTYPE_###` where **###** is your attendee id.
-	2. **Intelligent Scenario Description**: Enter a description for the Intelligent Scenario.
-	3. **Intelligent Scenario Type** as **Data Attribute Recommendation** 
+	a. **Intelligent Scenario Name**: Enter a unique name starting with Z, such as `Z_SFI24_PLANTYPE_###` where **###** is your attendee id.
+	b. **Intelligent Scenario Description**: Enter a description for the Intelligent Scenario.
+	c. **Intelligent Scenario Type** as **Data Attribute Recommendation** 
  
    <br>![](./images/10.png)
 
