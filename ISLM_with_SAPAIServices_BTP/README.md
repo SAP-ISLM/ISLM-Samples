@@ -28,68 +28,68 @@ The Intelligent Scenarios app is used to create intelligent scenarios, revie
    ![](./images/1.png)
 
 2. Click on **Copy** 
-   <br>![](/ISLM_with_SAPAIServices_BTP/images/2.png)
+   <br>![](./images/2.png)
 
 3. Provide the unique name in the Copy to field.<br>  
    Enter a unique name starting with ZCL, such as **ZCL_PLANTYPE_###**, where ### is your attendee id. 
    <br>Click on tick icon.
-   <br>![](/ISLM_with_SAPAIServices_BTP/images/3.png)
+   <br>![](./images/3.png)
 
 4. Click on **Local Object** 
-   <br>![](/ISLM_with_SAPAIServices_BTP/images/4.png)
+   <br>![](./images/4.png)
 
 5. Class is created in Inactive status. Click on **Display**
-   <br>![](/ISLM_with_SAPAIServices_BTP/images/5.png)
+   <br>![](./images/5.png)
 
 6. Click on **Activate** icon
-   <br>![](/ISLM_with_SAPAIServices_BTP/images/6.png)
+   <br>![](./images/6.png)
 
 7. Click on tick icon
-   <br>![](/ISLM_with_SAPAIServices_BTP/images/7.png)
+   <br>![](./images/7.png)
 
 8. Ctrl+Click [here](https://44.217.183.24:44301/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?sap-client=100&sap-language=EN#Shell-home) to open Fiori Launchpad in a new tab.<br>
    Enter the user details as provided in sheet.
 
 9. Click on **Analytics** section and choose the **Intelligent Scenario** app.
-   <br>![](/ISLM_with_SAPAIServices_BTP/images/8.png)
+   <br>![](./images/8.png)
 
 10. Click the **Create** button and choose->**Side-by Side**.
    This approach is commonly known as '**side-by-side**,' where the ML provider and the business application operate in separate stacks.
-   <br>![](/ISLM_with_SAPAIServices_BTP/images/9.png)
+   <br>![](./images/9.png)
 
 11. Provide the required information in the screen:
 	1. **Intelligent Scenario Name**: Enter a unique name starting with Z, such as `Z_SFI24_PLANTYPE_###` where **###** is your attendee id.
 	2. **Intelligent Scenario Description**: Enter a description for the Intelligent Scenario.
 	3. **Intelligent Scenario Type** as **Data Attribute Recommendation** 
  
-   <br>![](/ISLM_with_SAPAIServices_BTP/images/10.png)
+   <br>![](./images/10.png)
 
-   <br>![](/ISLM_with_SAPAIServices_BTP/images/10_1.png)
+   <br>![](./images/10_1.png)
 
 12. Select **Prediction Class** from value help 
-    <br>![](/ISLM_with_SAPAIServices_BTP/images/11.png)
+    <br>![](./images/11.png)
 13. Click on **OK** in the information box
-    <br>![](/ISLM_with_SAPAIServices_BTP/images/12.png)
+    <br>![](./images/12.png)
 14. Select the prediction class created by you in the previous section
-    <br>![](/ISLM_with_SAPAIServices_BTP/images/13.png)
+    <br>![](./images/13.png)
 15. Click on the Add Model button. The DAR Model screen will pop up. In the General Information section, provide a Name starting with Z and Description for the model. In the section Data, provide the below details. Training Dataset (CDS views): Z_SFLIGHT_DATA.
-    <br>![](/ISLM_with_SAPAIServices_BTP/images/14.png)
+    <br>![](./images/14.png)
 16. Click on Input value help
-    <br>![](/ISLM_with_SAPAIServices_BTP/images/14_1.png)
+    <br>![](./images/14_1.png)
 17. The Select Model Inputs will pop up. Select all the Inputs expect CARRID, CONNID, PLANETYPE. Use Select All option and uncheck the CARRID, CONNID, PLANETYPE.
-    <br>![](/ISLM_with_SAPAIServices_BTP/images/15.png)
+    <br>![](./images/15.png)
 18. Select the Data Management Type as Category/Number. Then, click on Select button.
-    <br>![](/ISLM_with_SAPAIServices_BTP/images/16.png)
+    <br>![](./images/16.png)
 19. Click on Target value help
-    <br>![](/ISLM_with_SAPAIServices_BTP/images/17.png)
+    <br>![](./images/17.png)
 20. The Select Model Targets will pop up. Select PLANETYPE. Select the Data Management Type as CATEGORY. Click on Select button.
-    <br>![](/ISLM_with_SAPAIServices_BTP/images/18.png)
+    <br>![](./images/18.png)
 21. Click on Add button.
-    <br>![](/ISLM_with_SAPAIServices_BTP/images/19.png)
+    <br>![](./images/19.png)
 22. The scenario is now created in Draft Status. View the Input and Output fields to train the model in the Input and Outputs Tabs respectively. Also Scenario is now ready to be published. Click on **Publish** button. You will receive a message that Intelligent Scenario is published.
-    <br>![](/ISLM_with_SAPAIServices_BTP/images/20.png)
+    <br>![](./images/20.png)
 23. Search the Intelligent Scenario created by you by entering the **Intelligent Scenario name** and **Status = Published**. 
-    <br>![](/ISLM_with_SAPAIServices_BTP/images/21.png)
+    <br>![](./images/21.png)
 
 ### Well done, you just created your first Side-by-side Intelligent Scenario.
 <br>
@@ -101,25 +101,25 @@ Once the Intelligent Scenario is published, we need to maintain the connection f
 1. Open **SAP Logon** and logon to **S4H 100**<br>
    Open transaction **/nSPRO**<br>
    Click **SAP Reference IMG** 
-   <br>![](/ISLM_with_SAPAIServices_BTP/images/22.png)
+   <br>![](./images/22.png)
 2. Click on **Yes** to proceed
-   <br>![](/ISLM_with_SAPAIServices_BTP/images/23.png)
+   <br>![](./images/23.png)
 3. Navigate to **ABAP Platform >Application Server >Basis Services >Intelligent Scenario Lifecycle Management> Service Connections for Machine Learning Infrastructure > Maintain Connection for an Intelligent Scenario**.Click on **Execute**
-    <br>![](/ISLM_with_SAPAIServices_BTP/images/24.png)
+    <br>![](./images/24.png)
 5. The ISLM Connection Mapping window opens. Click the **Create Connection** icon. 
-   <br>![](/ISLM_with_SAPAIServices_BTP/images/25.png)
+   <br>![](./images/25.png)
 6. Input the Intelligent Scenario Name and click on **Next**
-   <br>![](/ISLM_with_SAPAIServices_BTP/images/26.png)
+   <br>![](./images/26.png)
 7. Enter the Service Key details. Please find the service key in a .txt file in desktop to get Service Key details.
-   <br>![](/ISLM_with_SAPAIServices_BTP/images/27.png)
+   <br>![](./images/27.png)
 8. Click **Next**.
-   <br>![](/ISLM_with_SAPAIServices_BTP/images/28.png)
+   <br>![](./images/28.png)
 9. Perform **Connection Check** to know the health of ML provider.
-    <br>![](/ISLM_with_SAPAIServices_BTP/images/29.png)
+    <br>![](./images/29.png)
 10. Check the Connection Status changes to **Ready**. Click **Save**.
-    <br>![](/ISLM_with_SAPAIServices_BTP/images/30.png)
+    <br>![](./images/30.png)
 11. New entry will be added to the table.
-    <br>![](/ISLM_with_SAPAIServices_BTP/images/31.png)
+    <br>![](./images/31.png)
 
 ### Well done, you just Set up the connection for Intelligent Scenario to connect to BTP based ML service.
 <br>
@@ -131,53 +131,53 @@ In this section, you will use the Intelligent Scenario Management app to perform
 1. Ctrl+Click [here](https://44.217.183.24:44301/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?sap-client=100&sap-language=EN#Shell-home) to open Fiori Launchpad in a new tab.<br>
    Enter the user details as provided in sheet. Click on **My Home** section and choose the **Intelligent Scenario 
    Management** app.
-   <br>![](/ISLM_with_SAPAIServices_BTP/images/32.png)
+   <br>![](./images/32.png)
 3. Search the **Plane type** scenario created by you and navigate to the details page by clicking the **>** icon. 
-    <br>![](/ISLM_with_SAPAIServices_BTP/images/33.png)
+    <br>![](./images/33.png)
 4. Select the Model and click on the **Train** button to trigger the training.
-   <br>![](/ISLM_with_SAPAIServices_BTP/images/35.png)
+   <br>![](./images/35.png)
 5. Train dialog opens. Select a Version in the remote machine learning provider. Click on value help.
-   <br>![](/ISLM_with_SAPAIServices_BTP/images/36.png)
+   <br>![](./images/36.png)
 6. Select the version 3.0 in the version field.
-<br>![](/ISLM_with_SAPAIServices_BTP/images/37.png)
+<br>![](./images/37.png)
 7. Enter the package size as 100 to specify the maximum number of records to be retrieved at a time from the dataset.
-   <br>![](/ISLM_with_SAPAIServices_BTP/images/38.png)
+   <br>![](./images/38.png)
 8. Review the information in the train dialog. Click on Train.
-   <br>![](/ISLM_with_SAPAIServices_BTP/images/39.png)
+   <br>![](./images/39.png)
 9. New Training will be created in Scheduled status.
-   <br>![](/ISLM_with_SAPAIServices_BTP/images/40.png)
+   <br>![](./images/40.png)
 10. Monitor the status of Training and check the status changes to Uploading Data.
-   <br>![](/ISLM_with_SAPAIServices_BTP/images/40_1.png)
+   <br>![](./images/40_1.png)
 11. Monitor the status of Training and check the status changes to Training.
-   <br>![](/ISLM_with_SAPAIServices_BTP/images/41.png)
+   <br>![](./images/41.png)
 12. Monitor the status of Training and check the status changes to Completed. Note that training can take approximately 10-15 minutes to complete.
-   <br>![](/ISLM_with_SAPAIServices_BTP/images/42.png)
+   <br>![](./images/42.png)
 13. Click on **>** icon to view Training Report.
-   <br>![](/ISLM_with_SAPAIServices_BTP/images/43.png)
+   <br>![](./images/43.png)
 14. View the information in header section. 
     Click on **Debrief** tab.
-    <br>![](/ISLM_with_SAPAIServices_BTP/images/44.png)
+    <br>![](./images/44.png)
 15. View Overall and target metrics in Debrief. **Accuracy, F1Score, Precision and Recall** are classificaiton metrics. The higher the better.
-    <br>![](/ISLM_with_SAPAIServices_BTP/images/45.png)
+    <br>![](./images/45.png)
 16. Click on Data Management tab to view details of data packets.
-    <br>![](/ISLM_with_SAPAIServices_BTP/images/46.png)
+    <br>![](./images/46.png)
 17. Choose the back icon to navigate back to Trainings screen.
-    <br>![](/ISLM_with_SAPAIServices_BTP/images/47.png)
+    <br>![](./images/47.png)
 18. Click on **Deploy** Button
-    <br>![](/ISLM_with_SAPAIServices_BTP/images/48.png)
+    <br>![](./images/48.png)
 19. Click on **Deploy and Monitor** Button
-    <br>![](/ISLM_with_SAPAIServices_BTP/images/49.png)
+    <br>![](./images/49.png)
 20. New Deployment will be created in Scheduled status.
-    <br>![](/ISLM_with_SAPAIServices_BTP/images/50.png)
+    <br>![](./images/50.png)
 21. Monitor the status of Deployment and check the status changes to Deployment Pending.
-    <br>![](/ISLM_with_SAPAIServices_BTP/images/51.png)
+    <br>![](./images/51.png)
 22. Monitor the status of Deployment and check the status changes to **Deployed**. Note that Deployments can take 
     approximately **10 minutes** to be Deployed.
-    <br>![](/ISLM_with_SAPAIServices_BTP/images/52.png)
+    <br>![](./images/52.png)
 23. Activate the deployment to run inference. Select the Deployment and click on **Activate** button and choose **For All** 
     option. In the dialog Activate for All Users, choose **Activate For All**. Monitor that the Deployment has **Active for 
     all** Indicator. Then the status will changes Acive
-    <br>![](/ISLM_with_SAPAIServices_BTP/images/54.png)
+    <br>![](./images/54.png)
 
 ### Well done, you just Used Intelligent Scenario Management app to train, view model quality, deploy and activate the model
 <br>
@@ -187,18 +187,18 @@ In this section, you will use the Intelligent Scenario Management app to perform
   In this step, you will use the ABAP GUI to view the inference result from the trained model.
 
    1. Logon to system **S4H** open transaction **/nSE38**
-      <br>![](/ISLM_with_SAPAIServices_BTP/images/55.png)
+      <br>![](./images/55.png)
    2. Input Report Name as
       ```
       ZR_ISLM_TEST_OPERATION_API
       ```
        and Click on **Execute** Button
-      <br>![](/ISLM_with_SAPAIServices_BTP/images/56.png)
+      <br>![](./images/56.png)
    3. In the API Definition, choose option **TRIGGER_ONLINE_INFERENCE** from drop down.
-      <br>![](/ISLM_with_SAPAIServices_BTP/images/57.png)
+      <br>![](./images/57.png)
    4. Enter the prediction class associated with your Intelligent Scenario.
       Click on **Execute**.
-      <br>![](/ISLM_with_SAPAIServices_BTP/images/58.png)
+      <br>![](./images/58.png)
       <br>
       Copy the below text which contains the Inference Request in JSON format.
 
@@ -266,7 +266,7 @@ In this section, you will use the Intelligent Scenario Management app to perform
 }
 ```
 5. Paste the copied text in the **text editor**. Click on **tick** icon.
-   <br>![](/ISLM_with_SAPAIServices_BTP/images/59.png)
+   <br>![](./images/59.png)
  
 6. View the response from the trained model.
 
@@ -281,7 +281,7 @@ In this section, you will use the Intelligent Scenario Management app to perform
 	| 767-200 | 0.010   | 
 
    
-   <br>![](/ISLM_with_SAPAIServices_BTP/images/60.png)
+   <br>![](./images/60.png)
 
 ### Well done, you just Viewed the inference result returned by the model in an ABAP report.
 <br>
