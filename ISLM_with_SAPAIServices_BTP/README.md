@@ -25,7 +25,7 @@ The Intelligent Scenarios app is used to create intelligent scenarios, revie
 
    
    Open **SAP Logon** and logon to system **S4H 100** <br>
-   Open transaction **/nse24** and search for the ABAP class mentioned in User Details for your user group. Ctrl+Click [here](/exercises/ex5#for-attendees-001-to-008) to get the prediction class to be copied.
+   Open transaction **/nse24** and search for the ABAP class mentioned in User Details for your user group. 
    <br>![](/ISLM_with_SAPAIServices_BTP/images/1.png)
 1. Click on **Copy** 
    <br>![](/ISLM_with_SAPAIServices_BTP/images/2.png)
@@ -41,16 +41,15 @@ The Intelligent Scenarios app is used to create intelligent scenarios, revie
    <br>![](/ISLM_with_SAPAIServices_BTP/images/6.png)
 6. Click on tick icon
    <br>![](/ISLM_with_SAPAIServices_BTP/images/7.png)
-7. Ctrl+Click [here](https://flp1.tdc.sap.com:44302/sap/bc/ui2/flp#Shell-home) to open Fiori Launchpad in a new tab.<br>
-   Enter the user details as provided in Attendee Details. Ctrl+Click [Attendee Details](../ex5/).
-   <br>
-   Click on **My Home** section and choose the **Intelligent Scenario** app.
+7. Ctrl+Click [here](https://44.217.183.24:44301/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?sap-client=100&sap-language=EN#Shell-home) to open Fiori Launchpad in a new tab.<br>
+   Enter the user details as provided in sheet.
+8. Click on **Analytics** section and choose the **Intelligent Scenario** app.
    <br>![](/ISLM_with_SAPAIServices_BTP/images/8.png)
 9. Click the **Create** button and choose->**Side-by Side**.
-   This approach is commonly known as '**side-by-side**,' where the ML provider and the business application operate within separate stacks.
+   This approach is commonly known as '**side-by-side**,' where the ML provider and the business application operate in separate stacks.
    <br>![](/ISLM_with_SAPAIServices_BTP/images/9.png)
 11. Provide the required information in the screen:
-	1. **Intelligent Scenario Name**: Enter a unique name starting with Z, such as `Z_AI267_PLANTYPE_###` where **###** is your attendee id.
+	1. **Intelligent Scenario Name**: Enter a unique name starting with Z, such as `Z_SFI24_PLANTYPE_###` where **###** is your attendee id.
 	2. **Intelligent Scenario Description**: Enter a description for the Intelligent Scenario.
 	3. **Intelligent Scenario Type** as **Data Attribute Recommendation**  
    <br>![](/ISLM_with_SAPAIServices_BTP/images/10.png)
@@ -67,7 +66,7 @@ The Intelligent Scenarios app is used to create intelligent scenarios, revie
     <br>![](/ISLM_with_SAPAIServices_BTP/images/14_1.png)
 17. The Select Model Inputs will pop up. Select all the Inputs expect CARRID, CONNID, PLANETYPE. Use Select All option and uncheck the CARRID, CONNID, PLANETYPE.
     <br>![](/ISLM_with_SAPAIServices_BTP/images/15.png)
-18. Select the Data Management Type as CATEGORY/Number. Then, click on Select button.
+18. Select the Data Management Type as Category/Number. Then, click on Select button.
     <br>![](/ISLM_with_SAPAIServices_BTP/images/16.png)
 19. Click on Target value help
     <br>![](/ISLM_with_SAPAIServices_BTP/images/17.png)
@@ -87,7 +86,7 @@ The Intelligent Scenarios app is used to create intelligent scenarios, revie
 
 Once the Intelligent Scenario is published, we need to maintain the connection for an intelligent scenario in SAP S/4 HANA with the Data Attribute Recommendation service in BTP. Speaker has provisioned the ML Service in BTP and  **service key** details are provided in step 7 to setup the connection. 
 
-1. Open **SAP Logon** and logon to **HE4 400**<br>
+1. Open **SAP Logon** and logon to **S4H 100**<br>
    Open transaction **/nSPRO**<br>
    Click **SAP Reference IMG** 
    <br>![](/ISLM_with_SAPAIServices_BTP/images/22.png)
@@ -117,10 +116,9 @@ Once the Intelligent Scenario is published, we need to maintain the connection f
 Once the Intelligent Scenario is published, the Intelligent Scenario Management app helps you to train, monitor the model quality, deploy, and activate the model for productive usage.
 In this section, you will use the Intelligent Scenario Management app to perform ML operations. 
 
-1. Ctrl+Click [here](https://flp1.tdc.sap.com:44302/sap/bc/ui2/flp#Shell-home) to open Fiori Launchpad in a new tab.<br>
-   Enter the user details as provided in Attendee Details. Ctrl+Click [Attendee Details](../ex5/).
-   <br>
-   Click on **My Home** section and choose the **Intelligent Scenario Management** app.
+1. Ctrl+Click [here](https://44.217.183.24:44301/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?sap-client=100&sap-language=EN#Shell-home) to open Fiori Launchpad in a new tab.<br>
+   Enter the user details as provided in sheet. Click on **My Home** section and choose the **Intelligent Scenario 
+   Management** app.
    <br>![](/ISLM_with_SAPAIServices_BTP/images/32.png)
 3. Search the **Plane type** scenario created by you and navigate to the details page by clicking the **>** icon. 
     <br>![](/ISLM_with_SAPAIServices_BTP/images/33.png)
