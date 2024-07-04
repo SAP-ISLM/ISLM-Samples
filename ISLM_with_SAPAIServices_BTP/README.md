@@ -22,38 +22,50 @@ The Intelligent Scenarios app is used to create intelligent scenarios, revie
 
    Prediction class has methods to specify Inference type and ML Template for Data Attribute Recommendation. 
    For this use case, we will use generic template which make use of Classification algorithm.<br>
-
    
    Open **SAP Logon** and logon to system **S4H 100** <br>
    Open transaction **/nse24** and search for the ABAP class mentioned in User Details for your user group. 
    <br>![](/ISLM_with_SAPAIServices_BTP/images/1.png)
-1. Click on **Copy** 
+
+2. Click on **Copy** 
    <br>![](/ISLM_with_SAPAIServices_BTP/images/2.png)
-2. Provide the unique name in the Copy to field.<br>  
+
+3. Provide the unique name in the Copy to field.<br>  
    Enter a unique name starting with ZCL, such as **ZCL_PLANTYPE_###**, where ### is your attendee id. 
    <br>Click on tick icon.
    <br>![](/ISLM_with_SAPAIServices_BTP/images/3.png)
-3. Click on **Local Object** 
+
+4. Click on **Local Object** 
    <br>![](/ISLM_with_SAPAIServices_BTP/images/4.png)
-4. Class is created in Inactive status. Click on **Display**
+
+5. Class is created in Inactive status. Click on **Display**
    <br>![](/ISLM_with_SAPAIServices_BTP/images/5.png)
-5. Click on **Activate** icon
+
+6. Click on **Activate** icon
    <br>![](/ISLM_with_SAPAIServices_BTP/images/6.png)
-6. Click on tick icon
+
+7. Click on tick icon
    <br>![](/ISLM_with_SAPAIServices_BTP/images/7.png)
-7. Ctrl+Click [here](https://44.217.183.24:44301/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?sap-client=100&sap-language=EN#Shell-home) to open Fiori Launchpad in a new tab.<br>
+
+8. Ctrl+Click [here](https://44.217.183.24:44301/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?sap-client=100&sap-language=EN#Shell-home) to open Fiori Launchpad in a new tab.<br>
    Enter the user details as provided in sheet.
-8. Click on **Analytics** section and choose the **Intelligent Scenario** app.
+
+9. Click on **Analytics** section and choose the **Intelligent Scenario** app.
    <br>![](/ISLM_with_SAPAIServices_BTP/images/8.png)
-9. Click the **Create** button and choose->**Side-by Side**.
+
+10. Click the **Create** button and choose->**Side-by Side**.
    This approach is commonly known as '**side-by-side**,' where the ML provider and the business application operate in separate stacks.
    <br>![](/ISLM_with_SAPAIServices_BTP/images/9.png)
+
 11. Provide the required information in the screen:
 	1. **Intelligent Scenario Name**: Enter a unique name starting with Z, such as `Z_SFI24_PLANTYPE_###` where **###** is your attendee id.
 	2. **Intelligent Scenario Description**: Enter a description for the Intelligent Scenario.
-	3. **Intelligent Scenario Type** as **Data Attribute Recommendation**  
+	3. **Intelligent Scenario Type** as **Data Attribute Recommendation** 
+ 
    <br>![](/ISLM_with_SAPAIServices_BTP/images/10.png)
+
    <br>![](/ISLM_with_SAPAIServices_BTP/images/10_1.png)
+
 12. Select **Prediction Class** from value help 
     <br>![](/ISLM_with_SAPAIServices_BTP/images/11.png)
 13. Click on **OK** in the information box
