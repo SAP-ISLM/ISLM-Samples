@@ -25,7 +25,7 @@ The Intelligent Scenarios app is used to create intelligent scenarios, revie
    
    Open **SAP Logon** and logon to system **S4H 100** <br>
    Open transaction **/nse24** and search for the ABAP class mentioned in User Details for your user group. 
-   ![](/ISLM_with_SAPAIServices_BTP/images/1.png)
+   ![](./images/1.png)
 
 2. Click on **Copy** 
    <br>![](/ISLM_with_SAPAIServices_BTP/images/2.png)
