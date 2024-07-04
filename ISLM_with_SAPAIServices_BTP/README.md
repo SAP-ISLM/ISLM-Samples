@@ -98,7 +98,7 @@ Once the Intelligent Scenario is published, we need to maintain the connection f
    <br>![](/ISLM_with_SAPAIServices_BTP/images/25.png)
 6. Input the Intelligent Scenario Name and click on **Next**
    <br>![](/ISLM_with_SAPAIServices_BTP/images/26.png)
-7. Enter the Service Key details. Ctrl+Click [here](../ex5/) to get Service Key details.
+7. Enter the Service Key details. Please find the service key in a .txt file in desktop to get Service Key details.
    <br>![](/ISLM_with_SAPAIServices_BTP/images/27.png)
 8. Click **Next**.
    <br>![](/ISLM_with_SAPAIServices_BTP/images/28.png)
@@ -178,7 +178,7 @@ In this section, you will use the Intelligent Scenario Management app to perform
       <br>![](/ISLM_with_SAPAIServices_BTP/images/55.png)
    2. Input Report Name as
       ```
-      R_ISLM_TEST_OPERATION_API
+      ZR_ISLM_TEST_OPERATION_API
       ```
        and Click on **Execute** Button
       <br>![](/ISLM_with_SAPAIServices_BTP/images/56.png)
@@ -198,7 +198,7 @@ In this section, you will use the Intelligent Scenario Management app to perform
       
       To predict this target, inputs to model has to be provided.
 
-      Inputs would be **CARRID, CONNID, FLDATE, PRICE, SEATSMAX, SEATSOCC, SEATSMAXB, SEATSMAXF, SEATSOCCB, 
+      Inputs would be **FLDATE, PRICE, SEATSMAX, SEATSOCC, SEATSMAXB, SEATSMAXF, SEATSOCCB, 
       SEATSOCCF, PAYMENTSUM, CURRENCY**.
       # Inference Request in JSON
 ```json
@@ -276,9 +276,5 @@ In this section, you will use the Intelligent Scenario Management app to perform
 
 ## Summary
 🎉 Congratulations! 🎉 <br>
-You have successfully completed the Exercise 2. <br>
-Now Continue to 
-- [Additional Exercise](../ex3/README.md) 
-         <br>OR <br>
-- [Summary](../ex2/README.md)  
+You have successfully completed the Exercise!
 
