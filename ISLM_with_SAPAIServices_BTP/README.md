@@ -50,7 +50,7 @@ The Intelligent Scenarios app is used to create intelligent scenarios, revie
 8. Ctrl+Click [here](https://44.217.183.24:44301/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?sap-client=100&sap-language=EN#Shell-home) to open Fiori Launchpad in a new tab.<br>
    Enter the user details as provided in cheat sheet.
 
-9. Click on **Analytics** section and choose the **Intelligent Scenario** app.
+9. Click on **Analytics** section, you can find **Analytics** in **More** if it's not displayed in front. Then, choose the **Intelligent Scenario** app.
    ![](./images/8.png)
 
 10. Click the **Create** button and choose->**Side-by Side**.
@@ -147,8 +147,7 @@ Once the Intelligent Scenario is published, the Intelligent Scenario Management 
 In this section, you will use the Intelligent Scenario Management app to perform ML operations. 
 
 1. Ctrl+Click [here](https://44.217.183.24:44301/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?sap-client=100&sap-language=EN#Shell-home) to open Fiori Launchpad in a new tab.<br>
-   Enter the user details as provided in cheat sheet. Click on **My Home** section and choose the **Intelligent Scenario 
-   Management** app.
+   Enter the user details as provided in cheat sheet. Click on **Analytics** section, you can find **Analytics** in **More** if it's not displayed in front. Then,choose the **Intelligent Scenario Management** app.
    ![](./images/32.png)
 
 3. Search the **Plane type** scenario created by you and navigate to the details page by clicking the **>** icon. 
