@@ -48,7 +48,7 @@ The Intelligent Scenarios app is used to create intelligent scenarios, revie
    ![](./images/7.png)
 
 8. Ctrl+Click [here](https://44.217.183.24:44301/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?sap-client=100&sap-language=EN#Shell-home) to open Fiori Launchpad in a new tab.<br>
-   Enter the user details as provided in sheet.
+   Enter the user details as provided in cheat sheet.
 
 9. Click on **Analytics** section and choose the **Intelligent Scenario** app.
    ![](./images/8.png)
@@ -147,7 +147,7 @@ Once the Intelligent Scenario is published, the Intelligent Scenario Management 
 In this section, you will use the Intelligent Scenario Management app to perform ML operations. 
 
 1. Ctrl+Click [here](https://44.217.183.24:44301/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?sap-client=100&sap-language=EN#Shell-home) to open Fiori Launchpad in a new tab.<br>
-   Enter the user details as provided in sheet. Click on **My Home** section and choose the **Intelligent Scenario 
+   Enter the user details as provided in cheat sheet. Click on **My Home** section and choose the **Intelligent Scenario 
    Management** app.
    ![](./images/32.png)
 
