@@ -29,7 +29,7 @@ SAP HANA APL lets you build and apply different types of predictive models, such
 
 Gradient Boosting regression model type provides a more accurate modeling result than the legacy regression model.
 
-1. Open the Fiori Launchpad. Check the URL, Input the username and password provided in the cheat sheet. Click on My Home section and choose the Intelligent Scenario app.
+1. Open the Fiori Launchpad. Ctrl+Click [here](https://44.217.183.24:44301/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?sap-client=100&sap-language=EN#Shell-home) to open Fiori Launchpad in a new tab. Input the username and password provided in the cheat sheet. Click on **Analytics** section, you can find **Analytics** tab in **More** if it's not displayed in front. Then, choose the **Intelligent Scenario** app.
 
 ![](./images/1.png)
 
@@ -95,7 +95,7 @@ Once the Intelligent Scenario is published, the Intelligent Scenario Management 
 
 In this section, you will use the Intelligent Scenario Management app to perform ML operations. 
 
-1. Open the Fiori Launchpad. Check the URL, Input the username and password provided in the cheat sheet. Click on **My Home** section and choose the Intelligent Scenario Management app.
+1. Open the Fiori Launchpad. Ctrl+Click [here](https://44.217.183.24:44301/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?sap-client=100&sap-language=EN#Shell-home) to open Fiori Launchpad in a new tab. Input the username and password provided in the cheat sheet. Click on **Analytics** section, you can find **Analytics** tab in **More** if it's not displayed in front. Then, choose the Intelligent Scenario Management app.
 ![](./images/14.png)
 2. Search the **First-Class Seats Occupied** scenario created by you and navigate to the details page by clicking the `>` icon. <br>![](./images/15.png)
 3. Select the Model and click on the **Train button** to trigger the training.
@@ -158,9 +158,7 @@ Column **GB_SCORE_SEATSOCCF** column has the predicted value of the occupied sea
 # Schedule training 
 You can schedule a training for your intelligent scenarios. Once the trainings are scheduled, model versions are created automatically based on the selected frequency and preselected filters.
 
-1. Open the Fiori Launchpad. Check the URL, Input the username and password provided in the cheat sheet. 
-
-    Click on **My Home** section and choose the **Intelligent Scenario Management** app.
+1. Open the Fiori Launchpad. Ctrl+Click [here](https://44.217.183.24:44301/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?sap-client=100&sap-language=EN#Shell-home) to open Fiori Launchpad in a new tab. Input the username and password provided in the cheat sheet. Click on **Analytics** section, you can find **Analytics** tab in **More** if it's not displayed in front. Then, choose the Intelligent Scenario Management app.
     ![](./images/Scheduling/1.png)
 2. Search the **First-Class Seats Occupied** scenario created by you and navigate to the details page by clicking the **>** 
    icon.
