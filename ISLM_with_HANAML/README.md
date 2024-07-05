@@ -1,5 +1,32 @@
+# Creating Custom AI Use Cases in SAP S/4HANA
+## Context 
+
+In the rapidly evolving landscape of AI and machine learning, Intelligent Scenario Lifecycle Management (ISLM) has emerged as a critical framework that bridges the gap between data science endeavors and practical application development. ISLM plays a pivotal role in streamlining and optimizing the adoption of AI solutions, particularly within the SAP S/4HANA environment. 
+
+ISLM standardizes the integration and consumption of intelligent scenarios within SAP S/4HANA for both embedded as well as side-by-side scenarios. 
+
+ISLM can be leveraged to perform lifecycle operations, including (scheduled) (re-)training and deployment as well as activation of the model that should be consumed by the business application, directly within SAP S/4HANA. MLOps in ISLM is supported in the context of ML use case (Intelligent Scenario). 
+<br>
+
+## ISLM brief introduction
+ISLM framework stacked into SAP S/4HANA, is the right tool for application developers for SAP S/4HANA. ISLM standardizes the integration and consumption of intelligent scenarios within SAP S/4HANA for both embedded as well as side-by-side scenarios. Thus, application developers are required to use ISLM to create, register, and publish new scenarios and to implement the consumption of that scenario within the business application.  
+
+ISLM can be leveraged to perform lifecycle operations, including (scheduled) (re-)training and deployment as well as activation of the model that should be consumed by the business application, directly within SAP S/4HANA. ML ops in ISLM is supported in the context of ML use case (Intelligent Scenario).  
+
+An application developer for SAP S/4HANA from SAP or customer/partner side, is mainly responsible for integrating the AI scenarios into the respective application. ISLM facilitates embedding AI into business application with a low code approach. 
+
+By the end of this workshop, participants will gain a comprehensive understanding of how ISLM empowers organizations to smoothly transition from data science experimentation to real-world AI application development, all within the SAP S/4HANA environment. 
+
+![](./images/Overview.png)
+
+**Business User:** The end user who interacts with the business application and uses the predictions from machine learning for the business purpose. <br>
+**Business Administrator:** A domain expert or analytics specialist, who can perform model trainings based on business context, evaluate model quality, and can activate a model for production usage. <br>
+**Technical Administrator:** A system administrator who can perform the configurations of connectivity between different entities as well as maintains the technical configurations of the system. <br>
+**ABAP Developer:** A developer who can create ABAP artifacts required for Intelligent Scenario registration.<br> 
+**Intelligent Scenario Owner:** A owner who creates, reviews and publishes Intelligent Scenario. <br>
+
 # Harnessing ISLM with SAP HANA ML 
-## Scenario storyline: First Class Seats Occupied 
+## Scenario storyline: First Class Seats Occupied(Exercise) 
 In this practical exercise, our focus is on utilizing the SAP HANA Machine Learning (ML) algorithm to predict the occupancy of first-class seats on flights using APL Library. 
 
 To execute this exercise, we will leverage the Intelligent Scenario Lifecycle Management (ISLM) framework. ISLM serves as the foundation for creating and managing ML use cases seamlessly within the SAP S/4HANA stack. 
@@ -151,8 +178,8 @@ In this section, you will use the Intelligent Scenario Management app to perform
     ![](./images/29.png)  
 
 7. Enter the ISLM generated 1st CDS view of created Intelligent Scenario to view predictions from trained model. This CDS View was copied in the first step during creation of the Intelligent Scenario. 
-   **CDS View will have following name <INTELLIGENT_SCENARIO_NAME>_CDS01** 
-   Enter CDS View Name in Entity Name field and click on **Execute**
+   "CDS View will have following name <INTELLIGENT_SCENARIO_NAME>_CDS01" 
+   Enter CDS View Name in Entity Name field and click on "Execute"
 
     ![](./images/30.png)
 
@@ -163,8 +190,8 @@ Column **GB_SCORE_SEATSOCCF** column has the predicted value of the occupied sea
     ![](./images/31.png)
 
 9. Goto SE38 again and Search for report **RUT_DDLS_DATA_PREVIEW** and click on Execute(F8). Enter the ISLM generated 2nd CDS view of created Intelligent Scenario to view predictions from trained model. This CDS View was copied in the first step during creation of the Intelligent Scenario. 
-   **CDS View will have following name <INTELLIGENT_SCENARIO_NAME>_CDS01_KEY**
-   Enter CDS View Name in Entity Name field and click on **Execute**
+   "CDS View will have following name <INTELLIGENT_SCENARIO_NAME>_CDS01_KEY"
+   Enter CDS View Name in Entity Name field and click on **Execute** sdfds
 
     ![](./images/32.png)
 
