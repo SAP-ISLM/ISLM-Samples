@@ -272,6 +272,5 @@ You can schedule a training for your intelligent scenarios. Once the trainings a
 ### Well done, you just scheduled training.
 <br>
 
-## Summary
 🎉 Congratulations! 🎉 <br>
 You have successfully completed the exercise. <br>
