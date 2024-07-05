@@ -61,11 +61,11 @@ The Intelligent Scenarios  app is used to create intelligent scenarios, revi
    ![](./images/2.png)
 
 3. Provide the unique name in the Copy to field.<br>  
-   Enter a unique name starting with ZCL, such as **ZCL_PLANTYPE_###**, where ### is your attendee id. 
+   Enter a unique name such as **ZCL_PLANTYPE_###**, where ### is your attendee id. 
    Click on tick icon.
    ![](./images/3.png)
 
-4. Click on **Local Object** 
+4. Click on **Local Object**<br>
    ![](./images/4.png)
 
 5. Class is created in Inactive status. Click on **Display**
@@ -88,29 +88,29 @@ The Intelligent Scenarios  app is used to create intelligent scenarios, revi
    ![](./images/9.png)
 
 11. Provide the required information in the screen:
-  -	**Intelligent Scenario Name**: Enter a unique name starting with Z, such as `Z_SFI24_PLANTYPE_###` where **###** is your attendee id.
+  -	**Intelligent Scenario Name**: Enter a unique name starting such as `Z_SIT24_PLANETYP_###` where **###** is your attendee id.
   -	**Intelligent Scenario Description**: Enter a description for the Intelligent Scenario.
   -	**Intelligent Scenario Type** as **Data Attribute Recommendation**
-  -	Ensure the **Data Management** checkbox is selected
+  -	Ensure the **Data Management checkbox** is selected
    ![](./images/10.png)
    ![](./images/10_1.png)
 
-12. Select **Prediction Class** from value help 
+12. Click on value help for **Prediction Class** 
    ![](./images/11.png)
 
 13. Click on **OK** in the information box
    ![](./images/12.png)
 
-14. Select the prediction class created by you in the previous section
+14. Select the prediction class created by you in Step 3
    ![](./images/13.png)
 
-15. Click on the Add Model button. The DAR Model screen will pop up. In the General Information section, provide a Name starting with Z and Description for the model. In the section Data, provide the below details. Training Dataset (CDS views): Z_SFLIGHT_DATA.
+15. Click on the Add Model button. The Add DAR Model dialog will pop up. In the General Information section, provide a Name starting with Z and Description for the model. In the Data section, provide the below details. Training Dataset : `Z_SFLIGHT_DATA`.
    ![](./images/14.png)
 
-16. Click on Input value help
+16. Click on value help for the Inputs field
    ![](./images/14_1.png)
 
-17. The Select Model Inputs will pop up. Select all the Inputs expect CARRID, CONNID, PLANETYPE. Use Select All option and uncheck the CARRID, CONNID, PLANETYPE.
+17. The Select Model Inputs will pop up. Select all the Inputs expect CARRID, CONNID, PLANETYPE. (Tip: Use the Select All option and uncheck the CARRID, CONNID, PLANETYPE)
    ![](./images/15.png)
 
 18. Select the Data Management Type as Category/Number. Then, click on Select button.
@@ -119,13 +119,13 @@ The Intelligent Scenarios  app is used to create intelligent scenarios, revi
 19. Click on Target value help
    ![](./images/17.png)
 
-20. The Select Model Targets will pop up. Select PLANETYPE. Select the Data Management Type as CATEGORY. Click on Select button.
+20. The Select Model Targets will pop up. Select PLANETYPE and the corresponding Data Management Type as CATEGORY. Click on Select button.
    ![](./images/18.png)
 
 21. Click on Add button.
    ![](./images/19.png)
 
-22. The scenario is now created in Draft Status. View the Input and Output fields to train the model in the Input and Outputs Tabs respectively. Also Scenario is now ready to be published. Click on **Publish** button. You will receive a message that Intelligent Scenario is published.
+22. The scenario is now created in Draft Status. You can view the Input and Output fields used to train the model in the Input and Outputs Tabs respectively. Also Scenario is now ready to be published. Click on **Publish** button. You will receive a message that Intelligent Scenario is published.
    ![](./images/20.png)
 
 23. Search the Intelligent Scenario created by you by entering the **Intelligent Scenario name** and **Status = Published**. 
@@ -136,23 +136,21 @@ The Intelligent Scenarios  app is used to create intelligent scenarios, revi
 
 ## 2. Set up the connection for Intelligent Scenario to connect to BTP based ML service
 
-Once the Intelligent Scenario is published, we need to maintain the connection for an intelligent scenario in SAP S/4 HANA with the Data Attribute Recommendation service in BTP. Speaker has provisioned the ML Service in BTP and  **service key** details are provided in step 7 to setup the connection. 
+Once the Intelligent Scenario is published, we need to maintain the connection for the intelligent scenario in SAP S/4 HANA with the Data Attribute Recommendation service in BTP. This service has already been provisioned in BTP and  **service key** is available in the Desktop folder. 
 
-1. Open **SAP Logon** and logon to **S4H 100**<br>
-   Open transaction **/nSPRO**<br>
+1. Open transaction **/nSPRO** in **SAP Logon**<br>
    Click **SAP Reference IMG** 
    ![](./images/22.png)
 
-2. Click on **Yes** to proceed
+2. Navigate to **ABAP Platform >Application Server >Basis Services >Intelligent Scenario Lifecycle Management> Service Connections for Machine Learning Infrastructure > Maintain Connection for an Intelligent Scenario**.Click on **Execute**
    ![](./images/23.png)
 
-3. Navigate to **ABAP Platform >Application Server >Basis Services >Intelligent Scenario Lifecycle Management> Service Connections for Machine Learning Infrastructure > Maintain Connection for an Intelligent Scenario**.Click on **Execute**
    ![](./images/24.png)
 
 5. The ISLM Connection Mapping window opens. Click the **Create Connection** icon. 
    ![](./images/25.png)
 
-6. Input the Intelligent Scenario Name and click on **Next**
+6. Input the Intelligent Scenario Name created by you and click on **Next**
    ![](./images/26.png)
 
 7. Enter the Service Key details. Please find the service key in a .txt file in desktop to get Service Key details.
@@ -181,13 +179,13 @@ In this section, you will use the Intelligent Scenario Management app to perform
    Enter the user details as provided in cheat sheet. Click on **Analytics** section, you can find **Analytics** tab in **More** if it's not displayed in front. Then,choose the **Intelligent Scenario Management** app.
    ![](./images/32.png)
 
-3. Search the **Plane type** scenario created by you and navigate to the details page by clicking the **>** icon. 
+3. Find the scenario created by searching using the name and navigate to the details page by clicking the **>** icon. 
    ![](./images/33.png)
 
-4. Select the Model and click on the **Train** button to trigger the training.
+4. Select the Model and click on the **Train** button to launch the training dialog.
    ![](./images/35.png)
 
-5. Train dialog opens. Select a Version in the remote machine learning provider. Click on value help.
+5. Train dialog opens. To select a Version from the remote machine learning provider click on value help highlighted.
    ![](./images/36.png)
 
 6. Select the version 3.0 in the version field.
