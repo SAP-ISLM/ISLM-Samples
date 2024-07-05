@@ -86,7 +86,8 @@ The Prediction variable includes the calculation result.
 ![](./images/11.png)
 10. Navigate to the details page by clicking the `>` icon. 
 ![](./images/12.png)
-11. Click on **Apply Setting** Tab. 3 CDS views are generated for the intelligent scenario to allow easy access to the predictions <br>![](./images/13.png) Click on i-icon to view the functionality & usage of each CDS view.
+11. Click on **Apply Setting** Tab. 3 CDS views are generated for the intelligent scenario to allow easy access to the predictions. Click on i-icon to view the functionality & usage of each CDS view.
+<br>![](./images/13.png)
 ### Well done, you just created your first embedded Intelligent Scenario.
 <br>
 
