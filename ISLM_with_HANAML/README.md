@@ -169,7 +169,7 @@ In this section, you will use the Intelligent Scenario Management app to perform
     ![](./images/38.png)
 
 4. You will use the SAP GUI to view the model's prediction.
-<br>Launch the SAP GUI logonpad via the Windows Taskbar and login to S4H 100 system with given credentials.
+<br>Launch the SAP GUI logonpad via the Windows Taskbar and login to S4H 100 system with given credentials in cheat sheet.
 
 5. Type **se38** in the command field and press **ENTER**.
     ![](./images/28.png)
