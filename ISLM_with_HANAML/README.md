@@ -274,4 +274,4 @@ You can schedule a training for your intelligent scenarios. Once the trainings a
 
 ## Summary
 🎉 Congratulations! 🎉 <br>
-You have successfully completed the Schedule Training. <br>
+You have successfully completed the exercise. <br>
