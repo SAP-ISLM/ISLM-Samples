@@ -1,3 +1,33 @@
+# Creating Custom AI Use Cases in SAP S/4HANA
+## Context 
+
+In the rapidly evolving landscape of AI and machine learning, Intelligent Scenario Lifecycle Management (ISLM) has emerged as a critical framework that bridges the gap between data science endeavors and practical application development. ISLM plays a pivotal role in streamlining and optimizing the adoption of AI solutions, particularly within the SAP S/4HANA environment. 
+
+ISLM standardizes the integration and consumption of intelligent scenarios within SAP S/4HANA for both embedded as well as side-by-side scenarios. 
+
+ISLM can be leveraged to perform lifecycle operations, including (scheduled) (re-)training and deployment as well as activation of the model that should be consumed by the business application, directly within SAP S/4HANA. MLOps in ISLM is supported in the context of ML use case (Intelligent Scenario). 
+<br>
+
+## ISLM brief introduction
+ISLM framework stacked into SAP S/4HANA, is the right tool for application developers for SAP S/4HANA. ISLM standardizes the integration and consumption of intelligent scenarios within SAP S/4HANA for both embedded as well as side-by-side scenarios. Thus, application developers are required to use ISLM to create, register, and publish new scenarios and to implement the consumption of that scenario within the business application.  
+
+ISLM can be leveraged to perform lifecycle operations, including (scheduled) (re-)training and deployment as well as activation of the model that should be consumed by the business application, directly within SAP S/4HANA. ML ops in ISLM is supported in the context of ML use case (Intelligent Scenario).  
+
+An application developer for SAP S/4HANA from SAP or customer/partner side, is mainly responsible for integrating the AI scenarios into the respective application. ISLM facilitates embedding AI into business application with a low code approach. 
+
+By the end of this workshop, participants will gain a comprehensive understanding of how ISLM empowers organizations to smoothly transition from data science experimentation to real-world AI application development, all within the SAP S/4HANA environment. 
+
+![](./images/Overview.png)
+
+**Business User:** The end user who interacts with the business application and uses the predictions from machine learning for the business purpose. <br>
+**Business Administrator:** A domain expert or analytics specialist, who can perform model trainings based on business context, evaluate model quality, and can activate a model for production usage. <br>
+**Technical Administrator:** A system administrator who can perform the configurations of connectivity between different entities as well as maintains the technical configurations of the system. <br>
+**ABAP Developer:** A developer who can create ABAP artifacts required for Intelligent Scenario registration.<br> 
+**Intelligent Scenario Owner:** An owner who creates, reviews and publishes Intelligent Scenario. <br>
+
+
+
+
 # Predict the plane type of an aircraft
 
 In this exercise, we are going to predict the plane type of an aircraft using SAP BTP based ML service Data Attribute Recommendation. We will use the Intelligent Scenario Lifecycle Management (ISLM) framework to create and operate the ML use case. 
@@ -9,22 +39,22 @@ With Data Attribute Recommendation you can
   -	Increase data consistency and accuracy
 
 This exercise includes the following steps: 
-1. Create and publish Intelligent Scenario.
-2. Set up the connection for Intelligent Scenario to connect to BTP based ML service.
+1. Create and publish an Intelligent Scenario.
+2. Set up the connection for the Intelligent Scenario to connect to BTP based ML service.
 3. Use Intelligent Scenario Management app to train, view model quality, deploy and activate the model.
 4. View the inference result returned by the model in an ABAP report.
 
 ## 1. Create and publish Intelligent Scenario
 
-The Intelligent Scenarios app is used to create intelligent scenarios, review, and publish them, and to make them available in the Intelligent Scenario Management app. In this step, you’ll create a new intelligent scenario to predict the plane type using SAP BTP based ML service Data Attribute Recommendation. 
+The Intelligent Scenarios  app is used to create intelligent scenarios, review, and publish them, and to make them available in the Intelligent Scenario Management app. In this step, you’ll create a new intelligent scenario to predict the plane type using SAP BTP based ML service Data Attribute Recommendation. 
 
 1. Create a Prediction Class which defines the behavior of the scenario.<br>
 
    Prediction class has methods to specify Inference type and ML Template for Data Attribute Recommendation. 
    For this use case, we will use generic template which make use of Classification algorithm.<br>
    
-   Open **SAP Logon** and logon to system **S4H 100** <br>
-   Open transaction **/nse24** and search for the ABAP class mentioned in User Details for your user group. 
+   Open **SAP Logon** and logon to system **S4H 100** (You can find the credentials written in the cheatsheet)<br>
+   Open transaction **/nse24** and search for the ABAP class **ZCL_PLANTYPE_H0**. 
    ![](./images/1.png)
 
 2. Click on **Copy** 
@@ -60,7 +90,8 @@ The Intelligent Scenarios app is used to create intelligent scenarios, revie
 11. Provide the required information in the screen:
   -	**Intelligent Scenario Name**: Enter a unique name starting with Z, such as `Z_SFI24_PLANTYPE_###` where **###** is your attendee id.
   -	**Intelligent Scenario Description**: Enter a description for the Intelligent Scenario.
-  -	**Intelligent Scenario Type** as **Data Attribute Recommendation** 
+  -	**Intelligent Scenario Type** as **Data Attribute Recommendation**
+  -	Ensure the **Data Management** checkbox is selected
    ![](./images/10.png)
    ![](./images/10_1.png)
 
@@ -328,7 +359,7 @@ In this section, you will use the Intelligent Scenario Management app to perform
 ### Well done, you just Viewed the inference result returned by the model in an ABAP report.
 <br>
 
-## Summary
-🎉 Congratulations! 🎉 <br>
-You have successfully completed the Exercise!
+## 
+## 🎉 Congratulations! You have successfully completed the Exercise!🎉
+
 
