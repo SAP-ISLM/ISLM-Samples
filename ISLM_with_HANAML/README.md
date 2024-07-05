@@ -33,11 +33,11 @@ Gradient Boosting regression model type provides a more accurate modeling result
 
 ![](./images/1.png)
 
-2. Click the Create button and chooseàEmbedded. In Embedded approach, a business application, for example SAP S/4HANA runs in the same stack as its machine learning provider SAP HANA machine learning with the analytics libraries SAP HANA Automated Predictive Library (APL) or SAP HANA Predictive Analysis Library (PAL).
+2. Click the Create button and choose Embedded. In Embedded approach, a business application, for example SAP S/4HANA runs in the same stack as its machine learning provider SAP HANA ML and it provides analytics libraries SAP HANA Automated Predictive Library (APL) or SAP HANA Predictive Analysis Library (PAL).
 
 ![](./images/2.png)
 
-3. Click on Do Not Show Again and Close in the Onboarding Dialog.
+3. Click on 'Do Not Show Again' and Close in the Onboarding Dialog.
 
 ![](./images/3.png)
 
@@ -86,7 +86,7 @@ The Prediction variable includes the calculation result.
 ![](./images/11.png)
 10. Navigate to the details page by clicking the `>` icon. 
 ![](./images/12.png)
-11. Click on **Apply Setting** Tab and copy the CDS View name. CDS views are generated for the intelligent scenario to allow easy access to the predictions <br>![](./images/13.png)
+11. Click on **Apply Setting** Tab. 3 CDS views are generated for the intelligent scenario to allow easy access to the predictions <br>![](./images/13.png) Click on i-icon to view the functionality & usage of each CDS view.
 ### Well done, you just created your first embedded Intelligent Scenario.
 <br>
 
