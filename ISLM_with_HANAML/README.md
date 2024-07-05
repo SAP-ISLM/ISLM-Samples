@@ -52,19 +52,19 @@ Gradient Boosting regression model type provides a more accurate modeling result
     ![](./images/5.png)
 
 6. The APL Regression Model screen will pop up. Provide information as mentioned below: 
-    1) **Name:** Enter a model name starting with Z. 
-    2) **Description:** Enter a description.
+     -	**Name:** Enter a model name starting with Z. 
+     -	**Description:** Enter a description.
     
     ![](./images/6.png)
 
-    3) Enter a CDS view to be used as **Training Dataset**: `ZISLM_SFLIGHT_TRAIN_CDS`. <br>Training Dataset to be used for training the model. 
-    4) Enter a CDS view to be used as **Apply Dataset**: `ZISLM_SFLIGHT_APPLY_CDS` (Note that apply dataset is different from training dataset). <br>Apply dataset is Dataset used for prediction.
+     -	Enter a CDS view to be used as **Training Dataset**: `ZISLM_SFLIGHT_TRAIN_CDS`. <br>Training Dataset to be used for training the model. 
+     -	Enter a CDS view to be used as **Apply Dataset**: `ZISLM_SFLIGHT_APPLY_CDS` (Note that apply dataset is different from training dataset). <br>Apply dataset is Dataset used for prediction.
 
     ![](./images/7.png)
 
-    5) Select your target variable. **Target**: `SEATSOCC_F`. <br>Target variable is field whose value you want to predict. 
-    6) **Max Reason Code:** `1` Number of reason codes you want to generate. Reason codes are variables whose values have the most influence in a score-based decision (typically a risk score). <br>The variables for which the contribution is the most differential are selected as the most important reason codes. <br>Apply output configuration has the selected metrics that are added in the intelligent scenario output and used for prediction. 
-    7) Click on the **Add** button.
+     -	Select your target variable. **Target**: `SEATSOCC_F`. <br>Target variable is field whose value you want to predict. 
+     -	**Max Reason Code:** `1` Number of reason codes you want to generate. Reason codes are variables whose values have the most influence in a score-based decision (typically a risk score). <br>The variables for which the contribution is the most differential are selected as the most important reason codes. <br>Apply output configuration has the selected metrics that are added in the intelligent scenario output and used for prediction. 
+     -	Click on the **Add** button.
     
     ![](./images/8.png)
 
@@ -111,8 +111,7 @@ In this section, you will use the Intelligent Scenario Management app to perform
     <br>![](./images/20.png)
 8. Click on **'>'** icon to view Model Version Report.
     <br>![](./images/21.png)
-9. View different tabs like **Quality Information and Debrief**. You can see attributes about data quality and what key influencers 
-   are affecting the predictions.
+9. View different tabs like **Quality Information and Debrief**. You can see attributes about data quality and what key influencers are affecting the predictions.
     <br>![](./images/22.png)
    **Mean Absolute Error(MAE):** Average absolute difference between the predicted values and the actual values. The lower 
      the better.
@@ -139,18 +138,18 @@ In this step, you will use the ABAP Development Tools to view the model's predic
 1. Click on `Run ABAP Development Object as ABAP Application in SAP GUI` button, or alternatively press `Alt + F8`. If you're asked for credentials, please login the username and password provided in the cheat sheet.
     <br>![](./images/ADT_Toolbar.png)
 
-1. Type **se38** in the search dialog and clck **OK**.
+2. Type **se38** in the search dialog and clck **OK**.
     <br>![](./images/24.png)
 
-2. Search for report **RUT_DDLS_DATA_PREVIEW** and click on Execute 
+3. Search for report **RUT_DDLS_DATA_PREVIEW** and click on Execute 
     <br>![](./images/25.png)
 
-3. Enter the ISLM generated CDS view of created Intelligent Scenario to view predictions from trained model. This CDS View was copied in the first step during creation of the Intelligent Scenario. 
+4. Enter the ISLM generated CDS view of created Intelligent Scenario to view predictions from trained model. This CDS View was copied in the first step during creation of the Intelligent Scenario. 
    **CDS View will have following name <INTELLIGENT_SCENARIO_NAME>_CDS01.** 
    Enter CDS View Name in Entity Name field and click on **Execute**.
     <br>![](./images/26.png)
 
-4. You can scroll down and see the model's keys in the first four columns: **Airline Code, Flight Connection Number, Flight Date and Booking number.** <br>
+5. You can scroll down and see the model's keys in the first four columns: **Airline Code, Flight Connection Number, Flight Date and Booking number.** <br>
 Column **SEATSOCCF** has the actual value of the seats occupied.<br>
 Column **GB_SCORE_SEATSOCCF** column has the predicted value of the occupied seats.
     <br>![](./images/27.png)
