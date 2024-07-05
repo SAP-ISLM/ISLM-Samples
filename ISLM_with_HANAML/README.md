@@ -123,6 +123,7 @@ In this section, you will use the Intelligent Scenario Management app to perform
    
    **Mean Absolute Percentage Error(MAPE)** Average of the absolute percentage errors of the predictions. The lower the 
     better.
+
     <br>Choose the back icon <img src="../images/SAPBack_White.png" width="70"> to navigate back to Model Versions screen.
 10. Activate the model version to return predictions. Select the Model Version and click the **Activate** button.
     <br>![](./images/23.png)
