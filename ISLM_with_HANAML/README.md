@@ -178,8 +178,8 @@ In this section, you will use the Intelligent Scenario Management app to perform
     ![](./images/29.png)  
 
 7. Enter the ISLM generated 1st CDS view of created Intelligent Scenario to view predictions from trained model. This CDS View was copied in the first step during creation of the Intelligent Scenario. 
-   <br>**CDS View will have following name <INTELLIGENT_SCENARIO_NAME>_CDS01**<br>
-   Enter CDS View Name in Entity Name field and click on **Execute**
+   <br>"CDS View will have following name <INTELLIGENT_SCENARIO_NAME>_CDS01"<br>
+   Enter CDS View Name in Entity Name field and click on "Execute"
 
     ![](./images/30.png)
 
@@ -190,8 +190,8 @@ Column **GB_SCORE_SEATSOCCF** column has the predicted value of the occupied sea
     ![](./images/31.png)
 
 9. Goto SE38 again and Search for report **RUT_DDLS_DATA_PREVIEW** and click on Execute(F8). Enter the ISLM generated 2nd CDS view of created Intelligent Scenario to view predictions from trained model. This CDS View was copied in the first step during creation of the Intelligent Scenario. 
-   "CDS View will have following name <INTELLIGENT_SCENARIO_NAME>_CDS01_KEY"
-   Enter CDS View Name in Entity Name field and click on **Execute** sdfds
+   <br>"CDS View will have following name <INTELLIGENT_SCENARIO_NAME>_CDS01_KEY"<br>
+   Enter CDS View Name in Entity Name field and click on "Execute"
 
     ![](./images/32.png)
 
@@ -210,8 +210,8 @@ Column **GB_SCORE_SEATSOCCF** column has the predicted value of the occupied sea
     ![](./images/34.png)
 
 12. Goto SE38 again and Search for report **RUT_DDLS_DATA_PREVIEW** and click on Execute(F8). Enter the ISLM generated 3rd CDS view of created Intelligent Scenario to view predictions from trained model. This CDS View was copied in the first step during creation of the Intelligent Scenario. 
-    **CDS View will have following name <INTELLIGENT_SCENARIO_NAME>_CDS01_WHR**
-   Enter CDS View Name in Entity Name field and click on **Execute**
+    <br>"CDS View will have following name <INTELLIGENT_SCENARIO_NAME>_CDS01_WHR"<br>
+   Enter CDS View Name in Entity Name field and click on "Execute"
 
     ![](./images/35.png)
 
