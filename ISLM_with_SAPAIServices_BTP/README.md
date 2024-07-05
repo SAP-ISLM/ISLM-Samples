@@ -338,7 +338,7 @@ In this section, you will use the Intelligent Scenario Management app to perform
 	| A319-100 | 1.0 |
 	| 747-400 | 0.0  |
 
-   Note: The predicted values and the probabilities depend havily on the inputs, the training data as well as the training metrics
+   Note: The predicted values and the probabilities depend heavily on the inputs, the training data as well as the training metrics
 
    
    ![](./images/60.png)
