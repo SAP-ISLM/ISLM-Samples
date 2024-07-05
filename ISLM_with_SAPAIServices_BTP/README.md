@@ -179,110 +179,97 @@ In this section, you will use the Intelligent Scenario Management app to perform
    Enter the user details as provided in cheat sheet. Click on **Analytics** section, you can find **Analytics** tab in **More** if it's not displayed in front. Then,choose the **Intelligent Scenario Management** app.
    ![](./images/32.png)
 
-3. Find the scenario created by searching using the name and navigate to the details page by clicking the **>** icon. 
+2. Find the scenario created by searching using the name and navigate to the details page by clicking the **>** icon. 
    ![](./images/33.png)
 
-4. Select the Model and click on the **Train** button to launch the training dialog.
+3. Select the Model and click on the **Train** button to launch the training dialog.
    ![](./images/35.png)
 
-5. Train dialog opens. To select a Version from the remote machine learning provider click on value help highlighted.
+4. Train dialog opens. To select a Version from the remote machine learning provider click on value help highlighted.
    ![](./images/36.png)
 
-6. Select the version 3.0 in the version field.
+5. Select the version 3.0 in the version field.
    ![](./images/37.png)
 
-7. Enter the package size as 100 to specify the maximum number of records to be retrieved at a time from the dataset.
-   ![](./images/38.png)
-
-8. Review the information in the train dialog. Click on Train.
+6. Review the information in the train dialog. Click on Train.
    ![](./images/39.png)
 
-9. New Training will be created in Scheduled status.
+7. New Training will be created in Scheduled status.
    ![](./images/40.png)
 
-10. Monitor the status of Training and check the status changes to Uploading Data.
+8. Monitor the status of Training and check that the status changes to Uploading Data.
     ![](./images/40_1.png)
 
-11. Monitor the status of Training and check the status changes to Training.
+9. Monitor the status of Training and check the status changes to Training.
     ![](./images/41.png)
 
-12. Monitor the status of Training and check the status changes to Completed. Note that training can take approximately 10-15 minutes to complete.
+10. Wait for the status of the Training to change to Completed. Note that training can take around 5 minutes to complete.
     ![](./images/42.png)
 
-13. Click on **>** icon to view Training Report.
+11. Click on **>** icon to view Training Details.
     ![](./images/43.png)
 
-14. View the information in header section. 
+12. View the information in header section. 
     Click on **Debrief** tab.
     ![](./images/44.png)
 
-15. View Overall and target metrics in Debrief. **Accuracy, F1Score, Precision and Recall** are classificaiton metrics. The higher the better.
+13. View Overall and target metrics in Debrief. **Accuracy, F1Score, Precision and Recall** are classificaiton metrics. The higher the better.
     ![](./images/45.png)
 
-16. Click on Data Management tab to view details of data packets.
+14. Click on Data Management tab to view details of data packets.
     ![](./images/46.png)
 
-17. Choose the back icon to navigate back to Trainings screen.
+15. Choose the back icon to navigate back to Trainings screen.
     ![](./images/47.png)
 
-18. Click on **Deploy** Button
+16. Click on **Deploy** Button
     ![](./images/48.png)
 
-19. Click on **Deploy and Monitor** Button
+17. Click on **Deploy and Monitor** Button
     ![](./images/49.png)
 
-20. New Deployment will be created in Scheduled status.
+18. New Deployment will be created in Scheduled status.
     ![](./images/50.png)
 
-21. Monitor the status of Deployment and check the status changes to Deployment Pending.
+19. Monitor the status of Deployment and check the status changes to Deployment Pending.
     ![](./images/51.png)
 
-22. Monitor the status of Deployment and check the status changes to **Deployed**. Note that Deployments can take 
+20. Monitor the status of Deployment and check the status changes to **Deployed**. Note that Deployments can take 
     approximately **10 minutes** to be Deployed.
     ![](./images/52.png)
 
-23. Activate the deployment to run inference. Select the Deployment and click on **Activate** button and choose **For All** 
-    option. In the dialog Activate for All Users, choose **Activate For All**. Monitor that the Deployment has **Active for 
-    all** Indicator. Then the status will changes Acive
+21. To consume the resulting inference from this intelligent scenario the deployment must be activated. Select the Deployment and click on **Activate** button and choose **For All** 
+    option. In the dialog Activate for All Users, choose **Activate For All**. Validate that the Deployment has **Active for 
+    all** Indicator. Then the status will change to Active
     ![](./images/54.png)
 
 
-### Well done, you just Used Intelligent Scenario Management app to train, view model quality, deploy and activate the model
+### Well done, you just used Intelligent Scenario Management app to train, view model quality, deploy and activate the model.
 <br>
     
    
 ## 4. View the inference result returned by the model in an ABAP report
   In this step, you will use the ABAP GUI to view the inference result from the trained model.
 
-   1. Logon to system **S4H** open transaction **/nSE38**
+   1. Open transaction **/nSE38** in the SAP GUI
       ![](./images/55.png)
 
-   2. Input Report Name as
-      ```
-      ZR_ISLM_TEST_OPERATION_API
-      ```
-       and Click on **Execute** Button
+   2. Input Report Name as `ZR_ISLM_TEST_OPERATION_API` and Click on **Execute** Button
       ![](./images/56.png)
 
    3. In the API Definition, choose option **TRIGGER_ONLINE_INFERENCE** from drop down.
       ![](./images/57.png)
 
-   4. Enter the prediction class associated with your Intelligent Scenario.
+   4. Enter the prediction class associated with your Intelligent Scenario (Created in Section 1 Step 3) .
       Click on **Execute**.
       ![](./images/58.png)
 
-      Copy the below text which contains the Inference Request in JSON format.
+      Your trained model is now ready to predict the target **PLANETYPE**. To predict this target, inputs to model has to be provided.
 
-      Inference Request contains the features and its value which is input for the trained model.
-      
-      Your trained model is now ready to predict the target **PLANETYPE**.
-
-      **topN**-parameter which defines how many options will be predicted.
-      
-      To predict this target, inputs to model has to be provided.
-
-      Inputs would be **FLDATE, PRICE, SEATSMAX, SEATSOCC, SEATSMAXB, SEATSMAXF, SEATSOCCB, 
-      SEATSOCCF, PAYMENTSUM, CURRENCY**.
+      Copy the below text which contains the Inference Request with inputs in JSON format.
+	- Inference Request contains the features and its value which is input for the trained model.
+	- **topN**-parameter which defines how many options will be predicted.
+      	- Inputs would be **FLDATE, PRICE, SEATSMAX, SEATSOCC, SEATSMAX_B, SEATSMAX_F, SEATSOCC_B, SEATSOCC_F, PAYMENTSUM, CURRENCY**.
       # Inference Request in JSON
 ```json
 {
