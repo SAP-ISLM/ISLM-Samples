@@ -279,19 +279,19 @@ In this section, you will use the Intelligent Scenario Management app to perform
                     "value": "374"
                 },
                 {
-                    "name": "SEATSMAXB",
+                    "name": "SEATSMAX_B",
                     "value": "31"
                 },
                 {
-                    "name": "SEATSMAXF",
+                    "name": "SEATSMAX_F",
                     "value": "21"
                 },
                 {
-                    "name": "SEATSOCCB",
+                    "name": "SEATSOCC_B",
                     "value": "29"
                 },
                 {
-                    "name": "SEATSOCCF",
+                    "name": "SEATSOCC_F",
                     "value": "21"
                 },
                 {
