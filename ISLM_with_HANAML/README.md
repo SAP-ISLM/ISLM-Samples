@@ -153,36 +153,41 @@ In this section, you will use the Intelligent Scenario Management app to perform
 7. Enter the ISLM generated 1st CDS view of created Intelligent Scenario to view predictions from trained model. This CDS View was copied in the first step during creation of the Intelligent Scenario. 
    **CDS View will have following name <INTELLIGENT_SCENARIO_NAME>_CDS01.** 
    Enter CDS View Name in Entity Name field and click on **Execute**.
+
     ![](./images/30.png)
 
 8. You can scroll down and see the model's keys in the first four columns: **Airline Code, Flight Connection Number, Flight Date and Booking number.** <br>
 Column **SEATSOCCF** has the actual value of the seats occupied.<br>
 Column **GB_SCORE_SEATSOCCF** column has the predicted value of the occupied seats.
+
     ![](./images/31.png)
 
-9. Goto SE38 again and Search for report **RUT_DDLS_DATA_PREVIEW** and click on Execute(F8). Enter the ISLM generated 2nd CDS view of created Intelligent Scenario to view predictions from trained model. This CDS View was copied in the first step during creation of the Intelligent Scenario. 
+10. Goto SE38 again and Search for report **RUT_DDLS_DATA_PREVIEW** and click on Execute(F8). Enter the ISLM generated 2nd CDS view of created Intelligent Scenario to view predictions from trained model. This CDS View was copied in the first step during creation of the Intelligent Scenario. 
    **CDS View will have following name <INTELLIGENT_SCENARIO_NAME>_CDS01_KEY.** 
    Enter CDS View Name in Entity Name field and click on **Execute**.
+
     ![](./images/32.png)
 
-10. Provide below values to the respective CDS parameters
+11. Provide below values to the respective CDS parameters
      -	P_BOOKID = 00000012
      -	P_CARRID = AA
      -	P_CONNID = 0017
      -	P_FLDATE = 20210916
+
     ![](./images/33.png)
     
 12. You can scroll down and see the model's keys in the first four columns: **Airline Code, Flight Connection Number, Flight Date and Booking number.** <br>
 Column **SEATSOCCF** has the actual value of the seats occupied.<br>
 Column **GB_SCORE_SEATSOCCF** column has the predicted value of the occupied seats.
+
     ![](./images/34.png)
 
-13. Goto SE38 again and Search for report **RUT_DDLS_DATA_PREVIEW** and click on Execute(F8). Enter the ISLM generated 3rd CDS view of created Intelligent Scenario to view predictions from trained model. This CDS View was copied in the first step during creation of the Intelligent Scenario. 
+14. Goto SE38 again and Search for report **RUT_DDLS_DATA_PREVIEW** and click on Execute(F8). Enter the ISLM generated 3rd CDS view of created Intelligent Scenario to view predictions from trained model. This CDS View was copied in the first step during creation of the Intelligent Scenario. 
    **CDS View will have following name <INTELLIGENT_SCENARIO_NAME>_CDS01_WHR.** 
    Enter CDS View Name in Entity Name field and click on **Execute**.
     ![](./images/35.png)
 
-14. Provide below values to the respective CDS parameters
+15. Provide below values to the respective CDS parameters
      -	P_WHERE = CONNID = 0017 AND FLDATE = 20210916
     ![](./images/36.png)
     
