@@ -178,8 +178,8 @@ In this section, you will use the Intelligent Scenario Management app to perform
     ![](./images/29.png)  
 
 7. Enter the ISLM generated 1st CDS view of created Intelligent Scenario to view predictions from trained model. This CDS View was copied in the first step during creation of the Intelligent Scenario. 
-   "CDS View will have following name <INTELLIGENT_SCENARIO_NAME>_CDS01" 
-   Enter CDS View Name in Entity Name field and click on "Execute"
+   <br>**CDS View will have following name <INTELLIGENT_SCENARIO_NAME>_CDS01**<br>
+   Enter CDS View Name in Entity Name field and click on **Execute**
 
     ![](./images/30.png)
 
