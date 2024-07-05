@@ -332,11 +332,13 @@ In this section, you will use the Intelligent Scenario Management app to perform
    probability. The probability describes how certain the model is about its prediction. **If the probability is close to 1, 
    the model is very certain**.
    
-   Model predicts the PLANETYPE with two possible values(as defined in Inference request **"topN": 2** )
+   Model predicts the PLANETYPE with two possible values(as defined in Inference request **"topN": 2** ) <br>
 	| Predicted Value | Probability    | 
 	| :---:   | :---: | 
-	| 747-400 | 0.9646   |
-	| 767-200 | 0.010   | 
+	| A319-100 | 1.0 |
+	| 747-400 | 0.0  |
+
+   Note: The predicted values and the probabilities depend havily on the inputs, the training data as well as the training metrics
 
    
    ![](./images/60.png)
