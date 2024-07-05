@@ -250,7 +250,7 @@ You can schedule a training for your intelligent scenarios. Once the trainings a
 8. Review the section Intelligent Scenarios Details and Schedule Details.<br>
    Click on **Create Schedule** 
     <br>![](./images/Scheduling/8.png)
-9. Click on **Schedule Planned Task** tab to view the planned task created as a result of scheduling of training.
+9. Click on **Schedule Planned Task** tab to view the planned task created as a result of scheduling of training. Please wait until the given start time of the task and status is completed.
     <br>![](./images/Scheduling/9.png)
 10. Click on **>** icon.
     <br>![](./images/Scheduling/10.png)
