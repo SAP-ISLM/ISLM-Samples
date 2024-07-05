@@ -31,15 +31,15 @@ Gradient Boosting regression model type provides a more accurate modeling result
 
 1. Open the Fiori Launchpad. Ctrl+Click [here](https://44.217.183.24:44301/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?sap-client=100&sap-language=EN#Shell-home) to open Fiori Launchpad in a new tab. Input the username and password provided in the cheat sheet. Click on **Analytics** section, you can find **Analytics** tab in **More** if it's not displayed in front. Then, choose the **Intelligent Scenario** app.
 
-![](./images/1.png)
+  ![](./images/1.png)
 
 2. Click the Create button and choose Embedded. In Embedded approach, a business application, for example SAP S/4HANA runs in the same stack as its machine learning provider SAP HANA ML and it provides analytics libraries SAP HANA Automated Predictive Library (APL) or SAP HANA Predictive Analysis Library (PAL).
 
-![](./images/2.png)
+  ![](./images/2.png)
 
 3. Click on 'Do Not Show Again' and Close in the Onboarding Dialog.
 
-![](./images/3.png)
+  ![](./images/3.png)
 
 4. Provide the required information in the screen: 
     1) **Intelligent Scenario Name:** Enter a unique name starting with Z, such as `Z_SEATOCC_FTCLAS_###` ### is your attendee id. 
