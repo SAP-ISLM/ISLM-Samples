@@ -31,25 +31,25 @@ Gradient Boosting regression model type provides a more accurate modeling result
 
 1. Open the Fiori Launchpad. Ctrl+Click [here](https://44.217.183.24:44301/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?sap-client=100&sap-language=EN#Shell-home) to open Fiori Launchpad in a new tab. Input the username and password provided in the cheat sheet. Click on **Analytics** section, you can find **Analytics** tab in **More** if it's not displayed in front. Then, choose the **Intelligent Scenario** app.
 
-   ![](./images/1.png)
+    ![](./images/1.png)
 
 2. Click the Create button and choose Embedded. In Embedded approach, a business application, for example SAP S/4HANA runs in the same stack as its machine learning provider SAP HANA ML and it provides analytics libraries SAP HANA Automated Predictive Library (APL) or SAP HANA Predictive Analysis Library (PAL).
 
-   ![](./images/2.png)
+    ![](./images/2.png)
 
 3. Click on 'Do Not Show Again' and Close in the Onboarding Dialog.
 
-   ![](./images/3.png)
+    ![](./images/3.png)
 
 4. Provide the required information in the screen: 
-    1) **Intelligent Scenario Name:** Enter a unique name starting with Z, such as `Z_SEATOCC_FTCLAS_###` ### is your attendee id. 
-    2) **Intelligent Scenario Description:** Enter a description for the Intelligent Scenario. Intelligent Scenario Type, Algorithm and Machine Learning Library is automatically populated.
+      -	**Intelligent Scenario Name:** Enter a unique name starting with Z, such as `Z_SEATOCC_FTCLAS_###` ### is your attendee id. 
+      -	**Intelligent Scenario Description:** Enter a description for the Intelligent Scenario. Intelligent Scenario Type, Algorithm and Machine Learning Library is automatically populated.
 
-![](./images/4.png)
+    ![](./images/4.png)
     
 5. Click on the **Add Model** button.
 
-![](./images/5.png)
+    ![](./images/5.png)
 
 6. The APL Regression Model screen will pop up. Provide information as mentioned below: 
     1) **Name:** Enter a model name starting with Z. 
@@ -78,16 +78,16 @@ Gradient Boosting regression model type provides a more accurate modeling result
    
    Output tab displays the Key, Target, and Prediction fields. 
 The Prediction variable includes the calculation result.
-![](./images/9.png)
+    ![](./images/9.png)
 
 8. Scenario is now ready to be published. Click on **Publish** button. You will receive a message that Intelligent Scenario is published.
-![](./images/10.png)
+    ![](./images/10.png)
 9. Search the Intelligent Scenario created by you by entering the **Intelligent Scenario name and Status = Published**.
-![](./images/11.png)
+    ![](./images/11.png)
 10. Navigate to the details page by clicking the `>` icon. 
-![](./images/12.png)
+    ![](./images/12.png)
 11. Click on **Apply Setting** Tab. 3 CDS views are generated for the intelligent scenario to allow easy access to the predictions. Click on i-icon to view the functionality & usage of each CDS view.
-<br>![](./images/13.png)
+    <br>![](./images/13.png)
 ### Well done, you just created your first embedded Intelligent Scenario.
 <br>
 
@@ -97,23 +97,23 @@ Once the Intelligent Scenario is published, the Intelligent Scenario Management 
 In this section, you will use the Intelligent Scenario Management app to perform ML operations. 
 
 1. Open the Fiori Launchpad. Ctrl+Click [here](https://44.217.183.24:44301/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?sap-client=100&sap-language=EN#Shell-home) to open Fiori Launchpad in a new tab. Input the username and password provided in the cheat sheet. Click on **Analytics** section, you can find **Analytics** tab in **More** if it's not displayed in front. Then, choose the Intelligent Scenario Management app.
-![](./images/14.png)
+    ![](./images/14.png)
 2. Search the **First-Class Seats Occupied** scenario created by you and navigate to the details page by clicking the `>` icon. <br>![](./images/15.png)
 3. Select the Model and click on the **Train button** to trigger the training.
-   <br>![](./images/16.png)
+    <br>![](./images/16.png)
 4. In the Model section, view the Dataset Record Count. Click on **Train** button.
-   <br>![](./images/17.png)
+    <br>![](./images/17.png)
 5. New Model Version will be created in **Scheduled** status.
-   <br>![](./images/18.png)
+    <br>![](./images/18.png)
 6. Monitor the status of the **Model Version** and check the status changes to **Training**.
-   <br>![](./images/19.png)
+    <br>![](./images/19.png)
 7. Monitor the status of the Model Version and check the status changes to **Ready**.
-   <br>![](./images/20.png)
+    <br>![](./images/20.png)
 8. Click on **'>'** icon to view Model Version Report.
-   <br>![](./images/21.png)
+    <br>![](./images/21.png)
 9. View different tabs like **Quality Information and Debrief**. You can see attributes about data quality and what key influencers 
    are affecting the predictions.
-   <br>![](./images/22.png)
+    <br>![](./images/22.png)
    **Mean Absolute Error(MAE):** Average absolute difference between the predicted values and the actual values. The lower 
      the better.
    
@@ -134,26 +134,26 @@ In this section, you will use the Intelligent Scenario Management app to perform
 ## 3. Visualizing Model Version Predictions
 In this step, you will use the ABAP Development Tools to view the model's prediction.
 <br>You can start the ABAP Development Tools via the Windows Taskbar.
-<br>![](./images/TaskBar.png)
+    <br>![](./images/TaskBar.png)
 
 1. Click on `Run ABAP Development Object as ABAP Application in SAP GUI` button, or alternatively press `Alt + F8`. If you're asked for credentials, please login the username and password provided in the cheat sheet.
-<br>![](./images/ADT_Toolbar.png)
+    <br>![](./images/ADT_Toolbar.png)
 
 1. Type **se38** in the search dialog and clck **OK**.
-   <br>![](./images/24.png)
+    <br>![](./images/24.png)
 
 2. Search for report **RUT_DDLS_DATA_PREVIEW** and click on Execute 
-   <br>![](./images/25.png)
+    <br>![](./images/25.png)
 
 3. Enter the ISLM generated CDS view of created Intelligent Scenario to view predictions from trained model. This CDS View was copied in the first step during creation of the Intelligent Scenario. 
    **CDS View will have following name <INTELLIGENT_SCENARIO_NAME>_CDS01.** 
    Enter CDS View Name in Entity Name field and click on **Execute**.
-   <br>![](./images/26.png)
+    <br>![](./images/26.png)
 
 4. You can scroll down and see the model's keys in the first four columns: **Airline Code, Flight Connection Number, Flight Date and Booking number.** <br>
 Column **SEATSOCCF** has the actual value of the seats occupied.<br>
 Column **GB_SCORE_SEATSOCCF** column has the predicted value of the occupied seats.
-<br>![](./images/27.png)
+    <br>![](./images/27.png)
 
  ### Well done, you just visualized your trained model predictions..!
 
@@ -164,22 +164,22 @@ You can schedule a training for your intelligent scenarios. Once the trainings a
     ![](./images/Scheduling/1.png)
 2. Search the **First-Class Seats Occupied** scenario created by you and navigate to the details page by clicking the **>** 
    icon.
-   <br>![](./images/Scheduling/2.png)
+    <br>![](./images/Scheduling/2.png)
 3. Click on **Create Schedule**.
-   <br>![](./images/Scheduling/3.png)
+    <br>![](./images/Scheduling/3.png)
 4. View the information displayed in the screen. Click on **Model Version** value help.
-   <br>![](./images/Scheduling/4.png)
+    <br>![](./images/Scheduling/4.png)
 5. Select the reference Model Version.
-   <br>![](./images/Scheduling/5.png)
+    <br>![](./images/Scheduling/5.png)
 6. Click on **Go to Step 2**.
-   <br>![](./images/Scheduling/6.png)
+    <br>![](./images/Scheduling/6.png)
 7. Review Scheduling Options automatically proposed by the system. <br>
    Enter the Start as **2 minutes later** than the system proposed time. <br>
    Schedule for **1 Occurrence(s)** and click on **Go to Step 3**.
-   <br>![](./images/Scheduling/7.png)
+    <br>![](./images/Scheduling/7.png)
 8. Review the section Intelligent Scenarios Details and Schedule Details.<br>
    Click on **Create Schedule** 
-   <br>![](./images/Scheduling/8.png)
+    <br>![](./images/Scheduling/8.png)
 9. Click on **Schedule Planned Task** tab to view the planned task created as a result of scheduling of training.
     <br>![](./images/Scheduling/9.png)
 10. Click on **>** icon.
