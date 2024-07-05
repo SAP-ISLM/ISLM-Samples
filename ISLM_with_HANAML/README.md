@@ -131,28 +131,65 @@ In this section, you will use the Intelligent Scenario Management app to perform
 <br>
 
 ## 3. Visualizing Model Version Predictions
-In this step, you will use the ABAP Development Tools to view the model's prediction.
-<br>You can start the ABAP Development Tools via the Windows Taskbar.
-    <br>![](./images/TaskBar.png)
 
-1. Click on `Run ABAP Development Object as ABAP Application in SAP GUI` button, or alternatively press `Alt + F8`. If you're asked for credentials, please login the username and password provided in the cheat sheet.
-    <br>![](./images/ADT_Toolbar.png)
+1. Open the Fiori Launchpad. Ctrl+Click [here](https://44.217.183.24:44301/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?sap-client=100&sap-language=EN#Shell-home) to open Fiori Launchpad in a new tab. Input the username and password provided in the cheat sheet. Click on **Analytics** section, you can find **Analytics** tab in **More** if it's not displayed in front. Then, choose the **Intelligent Scenario** app.
+     ![](./images/1.png)
 
-2. Type **se38** in the search dialog and clck **OK**.
-    <br>![](./images/24.png)
+2. Search the Intelligent Scenario created by you by entering the **Intelligent Scenario name and Status = Published**.
+    ![](./images/11.png)
 
-3. Search for report **RUT_DDLS_DATA_PREVIEW** and click on Execute 
-    <br>![](./images/25.png)
+3. Click on **Apply Setting** Tab. You can find the 3 Apply CDS views in this tab. We can see the predictions for each view in next steps.
+    ![](./images/13.png)
 
-4. Enter the ISLM generated CDS view of created Intelligent Scenario to view predictions from trained model. This CDS View was copied in the first step during creation of the Intelligent Scenario. 
+4. You will use the SAP GUI to view the model's prediction.
+<br>Launch the SAP GUI logonpad via the Windows Taskbar and login to S4H 100 system with given credentials.
+
+5. Type **se38** in the command field and press **ENTER**.
+    <br>![](./images/28.png)
+
+6. Search for report **RUT_DDLS_DATA_PREVIEW** and click on Execute(F8) 
+    <br>![](./images/29.png)  
+
+7. Enter the ISLM generated 1st CDS view of created Intelligent Scenario to view predictions from trained model. This CDS View was copied in the first step during creation of the Intelligent Scenario. 
    **CDS View will have following name <INTELLIGENT_SCENARIO_NAME>_CDS01.** 
    Enter CDS View Name in Entity Name field and click on **Execute**.
-    <br>![](./images/26.png)
+    <br>![](./images/30.png)
 
-5. You can scroll down and see the model's keys in the first four columns: **Airline Code, Flight Connection Number, Flight Date and Booking number.** <br>
+8. You can scroll down and see the model's keys in the first four columns: **Airline Code, Flight Connection Number, Flight Date and Booking number.** <br>
 Column **SEATSOCCF** has the actual value of the seats occupied.<br>
 Column **GB_SCORE_SEATSOCCF** column has the predicted value of the occupied seats.
-    <br>![](./images/27.png)
+    <br>![](./images/31.png)
+
+9. Goto SE38 again and Search for report **RUT_DDLS_DATA_PREVIEW** and click on Execute(F8). Enter the ISLM generated 2nd CDS view of created Intelligent Scenario to view predictions from trained model. This CDS View was copied in the first step during creation of the Intelligent Scenario. 
+   **CDS View will have following name <INTELLIGENT_SCENARIO_NAME>_CDS01_KEY.** 
+   Enter CDS View Name in Entity Name field and click on **Execute**.
+    <br>![](./images/32.png)
+
+10. Provide below values to the respective CDS parameters
+      P_BOOKID = 00000012
+      P_CARRID = AA
+      P_CONNID = 0017
+      P_FLDATE = 20210916
+    <br>![](./images/33.png)
+    
+12. You can scroll down and see the model's keys in the first four columns: **Airline Code, Flight Connection Number, Flight Date and Booking number.** <br>
+Column **SEATSOCCF** has the actual value of the seats occupied.<br>
+Column **GB_SCORE_SEATSOCCF** column has the predicted value of the occupied seats.
+    <br>![](./images/34.png)
+
+13. Goto SE38 again and Search for report **RUT_DDLS_DATA_PREVIEW** and click on Execute(F8). Enter the ISLM generated 3rd CDS view of created Intelligent Scenario to view predictions from trained model. This CDS View was copied in the first step during creation of the Intelligent Scenario. 
+   **CDS View will have following name <INTELLIGENT_SCENARIO_NAME>_CDS01_WHR.** 
+   Enter CDS View Name in Entity Name field and click on **Execute**.
+    <br>![](./images/35.png)
+
+14. Provide below values to the respective CDS parameters
+      P_WHERE = CONNID = 0017 AND FLDATE = 20210916
+    <br>![](./images/36.png)
+    
+16. You can scroll down and see the model's keys in the first four columns: **Airline Code, Flight Connection Number, Flight Date and Booking number.** <br>
+Column **SEATSOCCF** has the actual value of the seats occupied.<br>
+Column **GB_SCORE_SEATSOCCF** column has the predicted value of the occupied seats.
+    <br>![](./images/37.png)
 
  ### Well done, you just visualized your trained model predictions..!
 
