@@ -332,7 +332,7 @@ In this section, you will use the Intelligent Scenario Management app to perform
    probability. The probability describes how certain the model is about its prediction. **If the probability is close to 1, 
    the model is very certain**.
    
-   Model predicts the PLANETYPE with two possible values(as defined in Inference request **"topN": 2** ) <br>
+   Model predicts the PLANETYPE with two possible values(as defined in Inference request **"topN": 2** <br>
 	| Predicted Value | Probability    | 
 	| :---:   | :---: | 
 	| A319-100 | 1.0 |
@@ -346,7 +346,6 @@ In this section, you will use the Intelligent Scenario Management app to perform
 ### Well done, you just Viewed the inference result returned by the model in an ABAP report.
 <br>
 
-## 
 ## 🎉 Congratulations! You have successfully completed the Exercise!🎉
 
 
