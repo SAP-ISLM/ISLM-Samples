@@ -69,7 +69,7 @@ Gradient Boosting regression model type provides a more accurate modeling result
     ![](./images/3.png)
 
 4. Provide the required information in the screen: 
-      -	**Intelligent Scenario Name:** Enter a unique name starting with Z, such as `Z_SEATOCC_FTCLAS_###` ### is your attendee id. 
+      -	**Intelligent Scenario Name:** Enter a unique name starting with Z, such as `Z_SEATOCC_FTCLAS_###` ### is your attendee id. <br> **Please ask moderator to know your attendee id**. <br>
       -	**Intelligent Scenario Description:** Enter a description for the Intelligent Scenario. Intelligent Scenario Type, Algorithm and Machine Learning Library is automatically populated.
 
     ![](./images/4.png)
