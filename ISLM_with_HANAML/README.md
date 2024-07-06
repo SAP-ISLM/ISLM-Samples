@@ -274,3 +274,6 @@ You can schedule a training for your intelligent scenarios. Once the trainings a
 
 🎉 Congratulations! 🎉 <br>
 You have successfully completed the exercise. <br>
+
+## Please provide your feedback in the link below
+https://forms.gle/AURPhUK8ojkN1wLe8
