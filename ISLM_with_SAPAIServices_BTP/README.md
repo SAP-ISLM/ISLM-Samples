@@ -54,7 +54,7 @@ The Intelligent Scenarios  app is used to create intelligent scenarios, revi
    For this use case, we will use generic template which make use of Classification algorithm.<br>
    
    Open **SAP Logon** and logon to system **S4H 100** (You can find the credentials written in the cheatsheet)<br>
-   Open transaction **/nse24** and search for the ABAP class **ZCL_PLANTYPE_H0**. 
+   Open transaction **/nse24** and search for the ABAP class **ZCL_PLANTYPE_HO**. 
    ![](./images/1.png)
 
 2. Click on **Copy** 
