@@ -61,7 +61,7 @@ The Intelligent Scenarios  app is used to create intelligent scenarios, revi
    ![](./images/2.png)
 
 3. Provide the unique name in the Copy to field.<br>  
-   Enter a unique name such as **ZCL_PLANTYPE_###**, where ### is your attendee id. 
+   Enter a unique name such as **ZCL_PLANTYPE_###**, where ### is your attendee id. <br> **Please ask moderator to know your attendee id**. <br>
    Click on tick icon.
    ![](./images/3.png)
 
