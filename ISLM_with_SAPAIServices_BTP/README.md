@@ -349,4 +349,4 @@ In this section, you will use the Intelligent Scenario Management app to perform
 ## 🎉 Congratulations! You have successfully completed the Exercise!🎉
 
 ## Please provide your feedback in the link below
-https://forms.gle/AURPhUK8ojkN1wLe8
+[Feedback Form](https://docs.google.com/forms/d/e/1FAIpQLScNH3NDY2vKgSvQoxTr2WQZNU9uV6PhLemlBmWn1L2mchW8nQ/viewform?hl=en)
